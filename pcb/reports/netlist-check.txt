@@ -98,13 +98,13 @@ NET: REGOUT
   - U2 REGOUT
   - CREG pin1 (+)
 
-NET: L1
-  - L1 pin1 (+)
+NET: SW_L1
   - U3 L1
+  - L1 pin1 (+)
 
-NET: L2
-  - L1 pin2 (-)
+NET: SW_L2
   - U3 L2
+  - L1 pin2 (-)
 
 NET: V3V3
   - TP2 pin1
@@ -152,11 +152,11 @@ NET: M1_GATE
   - RG1 pin2
   - Q1 G
 
-NET: M1_NEG
-  - M1_NEG pin1
+NET: M1_SWITCHED
   - CM1 pin2 (-)
   - D1 anode (+)
   - Q1 D
+  - M1_NEG pin1
 
 NET: M2_PWM
   - RG2 pin1
@@ -167,11 +167,11 @@ NET: M2_GATE
   - RG2 pin2
   - Q2 G
 
-NET: M2_NEG
-  - M2_NEG pin1
+NET: M2_SWITCHED
   - CM2 pin2 (-)
   - D2 anode (+)
   - Q2 D
+  - M2_NEG pin1
 
 NET: M3_PWM
   - RG3 pin1
@@ -182,11 +182,11 @@ NET: M3_GATE
   - RG3 pin2
   - Q3 G
 
-NET: M3_NEG
-  - M3_NEG pin1
+NET: M3_SWITCHED
   - CM3 pin2 (-)
   - D3 anode (+)
   - Q3 D
+  - M3_NEG pin1
 
 NET: M4_PWM
   - RG4 pin1
@@ -206,7 +206,6 @@ NET: GND
   - Q2 S
   - RPD1 pin2
   - Q1 S
-  - BAT2 pin1
   - TP1 pin1
   - U3 EP
   - U3 GND
@@ -264,6 +263,7 @@ NET: GND
   - COUT2 pin2 (-)
   - COUT1 pin2 (-)
   - CIN pin2 (-)
+  - BAT2 pin1
 
 NET: VBAT
   - M4_POS pin1
@@ -278,7 +278,6 @@ NET: VBAT
   - M1_POS pin1
   - CM1 pin1 (+)
   - D1 cathode (-)
-  - BAT1 pin1
   - U3 VINA
   - U3 pin7
   - U3 EN
@@ -287,12 +286,13 @@ NET: VBAT
   - CBULK pin1 (+)
   - CVINA pin1 (+)
   - CIN pin1 (+)
+  - BAT1 pin1
 
-NET: M4_NEG
-  - M4_NEG pin1
+NET: M4_SWITCHED
   - CM4 pin2 (-)
   - D4 anode (+)
   - Q4 D
+  - M4_NEG pin1
 
 
 COMPONENT_PINS:
@@ -391,9 +391,9 @@ U2 (ICM-20602)
 
 U3 (TPS63031DSKR)
 - pin1(VOUT): NETS(V3V3)
-- pin2(L2): NETS(L2)
+- pin2(L2): NETS(SW_L2)
 - pin3(PGND): NETS(GND)
-- pin4(L1): NETS(L1)
+- pin4(L1): NETS(SW_L1)
 - pin5(VIN): NETS(VBAT)
 - pin6(EN): NETS(VBAT)
 - pin7: NETS(VBAT)
@@ -403,8 +403,8 @@ U3 (TPS63031DSKR)
 - pin11(EP): NETS(GND)
 
 L1 (SRN3015-1R5Y)
-- pin1(anode, pos, left): NETS(L1)
-- pin2(cathode, neg, right): NETS(L2)
+- pin1(anode, pos, left): NETS(SW_L1)
+- pin2(cathode, neg, right): NETS(SW_L2)
 
 CIN (10uF undefined)
 - pin1(anode, pos, left): NETS(VBAT)
@@ -505,11 +505,11 @@ BAT2
 Q1 (AO3400A)
 - pin1(G): NETS(M1_GATE)
 - pin2(S): NETS(GND)
-- pin3(D): NETS(M1_NEG)
+- pin3(D): NETS(M1_SWITCHED)
 
 D1 (SS34)
 - pin1(cathode, neg): NETS(VBAT)
-- pin2(anode, pos): NETS(M1_NEG)
+- pin2(anode, pos): NETS(M1_SWITCHED)
 
 RG1 (100Ω undefined)
 - pin1(anode, pos, left): NETS(M1_PWM)
@@ -521,22 +521,22 @@ RPD1 (100kΩ undefined)
 
 CM1 (100nF undefined)
 - pin1(anode, pos, left): NETS(VBAT)
-- pin2(cathode, neg, right): NETS(M1_NEG)
+- pin2(cathode, neg, right): NETS(M1_SWITCHED)
 
 M1_POS
 - pin1: NETS(VBAT)
 
 M1_NEG
-- pin1: NETS(M1_NEG)
+- pin1: NETS(M1_SWITCHED)
 
 Q2 (AO3400A)
 - pin1(G): NETS(M2_GATE)
 - pin2(S): NETS(GND)
-- pin3(D): NETS(M2_NEG)
+- pin3(D): NETS(M2_SWITCHED)
 
 D2 (SS34)
 - pin1(cathode, neg): NETS(VBAT)
-- pin2(anode, pos): NETS(M2_NEG)
+- pin2(anode, pos): NETS(M2_SWITCHED)
 
 RG2 (100Ω undefined)
 - pin1(anode, pos, left): NETS(M2_PWM)
@@ -548,22 +548,22 @@ RPD2 (100kΩ undefined)
 
 CM2 (100nF undefined)
 - pin1(anode, pos, left): NETS(VBAT)
-- pin2(cathode, neg, right): NETS(M2_NEG)
+- pin2(cathode, neg, right): NETS(M2_SWITCHED)
 
 M2_POS
 - pin1: NETS(VBAT)
 
 M2_NEG
-- pin1: NETS(M2_NEG)
+- pin1: NETS(M2_SWITCHED)
 
 Q3 (AO3400A)
 - pin1(G): NETS(M3_GATE)
 - pin2(S): NETS(GND)
-- pin3(D): NETS(M3_NEG)
+- pin3(D): NETS(M3_SWITCHED)
 
 D3 (SS34)
 - pin1(cathode, neg): NETS(VBAT)
-- pin2(anode, pos): NETS(M3_NEG)
+- pin2(anode, pos): NETS(M3_SWITCHED)
 
 RG3 (100Ω undefined)
 - pin1(anode, pos, left): NETS(M3_PWM)
@@ -575,22 +575,22 @@ RPD3 (100kΩ undefined)
 
 CM3 (100nF undefined)
 - pin1(anode, pos, left): NETS(VBAT)
-- pin2(cathode, neg, right): NETS(M3_NEG)
+- pin2(cathode, neg, right): NETS(M3_SWITCHED)
 
 M3_POS
 - pin1: NETS(VBAT)
 
 M3_NEG
-- pin1: NETS(M3_NEG)
+- pin1: NETS(M3_SWITCHED)
 
 Q4 (AO3400A)
 - pin1(G): NETS(M4_GATE)
 - pin2(S): NETS(GND)
-- pin3(D): NETS(M4_NEG)
+- pin3(D): NETS(M4_SWITCHED)
 
 D4 (SS34)
 - pin1(cathode, neg): NETS(VBAT)
-- pin2(anode, pos): NETS(M4_NEG)
+- pin2(anode, pos): NETS(M4_SWITCHED)
 
 RG4 (100Ω undefined)
 - pin1(anode, pos, left): NETS(M4_PWM)
@@ -602,10 +602,10 @@ RPD4 (100kΩ undefined)
 
 CM4 (100nF undefined)
 - pin1(anode, pos, left): NETS(VBAT)
-- pin2(cathode, neg, right): NETS(M4_NEG)
+- pin2(cathode, neg, right): NETS(M4_SWITCHED)
 
 M4_POS
 - pin1: NETS(VBAT)
 
 M4_NEG
-- pin1: NETS(M4_NEG)
+- pin1: NETS(M4_SWITCHED)

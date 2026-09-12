@@ -45,21 +45,21 @@ test("sensor reserved pins and reference capacitor have distinct handling", () =
 test("all four motor stages use VBAT, flyback diodes, gate pulls and terminal capacitors", () => {
   for (let n = 1; n <= 4; n++) {
     expect(net(`D${n}`, 1)).toBe("VBAT");
-    expect(net(`D${n}`, 2)).toBe(`M${n}_NEG`);
+    expect(net(`D${n}`, 2)).toBe(`M${n}_SWITCHED`);
     expect(net(`Q${n}`, 1)).toBe(`M${n}_GATE`);
     expect(net(`Q${n}`, 2)).toBe("GND");
-    expect(net(`Q${n}`, 3)).toBe(`M${n}_NEG`);
+    expect(net(`Q${n}`, 3)).toBe(`M${n}_SWITCHED`);
     expect(net(`RG${n}`, 1)).toBe(net("U1", 34 + n));
     expect(net(`RG${n}`, 2)).toBe(`M${n}_GATE`);
     expect(net(`RPD${n}`, 1)).toBe(`M${n}_GATE`);
     expect(net(`RPD${n}`, 2)).toBe("GND");
     expect(net(`CM${n}`, 1)).toBe("VBAT");
-    expect(net(`CM${n}`, 2)).toBe(`M${n}_NEG`);
+    expect(net(`CM${n}`, 2)).toBe(`M${n}_SWITCHED`);
   }
 });
-test("placement output has no error records, no routing and correct mechanics", () => {
+test("placement output has no error records, routing and correct mechanics", () => {
   expect(data.filter((x: any) => x.type.endsWith("_error"))).toEqual([]);
-  expect(data.filter((x: any) => x.type === "pcb_trace")).toHaveLength(0);
+  expect(data.filter((x: any) => x.type === "pcb_trace").length).toBeGreaterThan(0);
   expect(
     data
       .filter((x: any) => x.type === "pcb_component")

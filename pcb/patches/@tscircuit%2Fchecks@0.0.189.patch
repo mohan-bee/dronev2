@@ -1,0 +1,28 @@
+diff --git a/dist/index.js b/dist/index.js
+index eb0a24e46aa3251f134b8c9347ff98643f7e66a5..687ae41bc7fc8d22bf1f23458f922168209c2a6d 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -1254,6 +1254,14 @@ var clamp = (value, min, max) => {
+ // lib/check-each-pcb-trace-non-overlapping/getCollidableBounds.ts
+ import { getBoundsOfPcbElements as getBoundsOfPcbElements3 } from "@tscircuit/circuit-json-util";
+ var getCollidableBounds = (collidable) => {
++  if (collidable.type === "pcb_hole" && collidable.hole_shape === "pill") {
++    return {
++      minX: collidable.x - collidable.hole_width / 2,
++      maxX: collidable.x + collidable.hole_width / 2,
++      minY: collidable.y - collidable.hole_height / 2,
++      maxY: collidable.y + collidable.hole_height / 2
++    };
++  }
+   if (collidable.type === "pcb_trace_segment") {
+     return {
+       minX: Math.min(collidable.x1, collidable.x2),
+@@ -1501,7 +1509,7 @@ function checkEachPcbTraceNonOverlapping(circuitJson, {
+         });
+         continue;
+       }
+-      const isCircular = obj.type === "pcb_hole";
++      const isCircular = obj.type === "pcb_hole" && obj.hole_shape === "circle";
+       if (isCircular) {
+         const radius = getRadiusOfCircuitJsonElement(obj);
+         const distance3 = segmentToCircleMinDistance2(

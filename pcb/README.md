@@ -1,4 +1,8 @@
-# Compact PCB placement
+# Drone PCB routing draft
+
+**Blocked by 99 board-edge trace violations. Do not fabricate.** This branch adds real copper keepouts, explicit power-width constraints, a bottom ground pour, and a conservative pill-hole DRC dependency patch. See [TS_ISSUES.md](../TS_ISSUES.md) for cropped snapshots and reproductions. The last approved placement remains in preview/pcb.png; preview/routing.png shows this routing study.
+
+Build and the no-error-records test deliberately fail while these violations remain. Do not bypass DRC to produce fabrication files.
 
 A 68 × 68 mm X-shaped PCB frame with 58 top-side placed components/pads, 80 mm opposite-motor spacing, four 7.6 mm collar openings, and an ESP32-S3 antenna overhanging the nose. The central body is 36 mm wide; nominal neighboring 46 mm prop discs have 10.57 mm clearance. PCB thickness is 1.0 mm, two layers, FR-4. The fabrication target is 1 oz copper and ENIG, to be specified at order time.
 
@@ -10,13 +14,13 @@ Requires Bun. Dependencies are locked.
 cd pcb
 bun install --frozen-lockfile
 bun run check
-bun run build -- --routing-disabled --pcb-png --svgs
+bun run build -- --pcb-png --svgs --autorouter-debug --autorouter-timeout 180s --autorouter-dump-srj all
 bun test
 bun run typecheck
 bun run dev
 ```
 
-`index.circuit.tsx` is the source. `geometry.json` owns the outline and motor locations; `keepouts.json` records unenforced copper and mechanical requirements. The CAD viewer consumes the compiled output, not a second hand-placed board.
+`index.circuit.tsx` is the source. `geometry.json` owns the outline and motor locations; `keepouts.json` records copper exclusion intent and the broader mechanical antenna-clearance volume; `index.circuit.tsx` emits the routing keepouts. The CAD viewer consumes the compiled output, not a second hand-placed board.
 
 ## Placement decisions
 

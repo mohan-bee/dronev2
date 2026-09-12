@@ -1,5 +1,5 @@
 {
-  "status": "requirements-only; core does not support pcbkeepout JSX",
+  "status": "IMU and antenna footprint copper exclusions use keepout JSX; broad antenna volume remains assembly guidance",
   "regions": [
     {
       "name": "IMU copper/via exclusion",
