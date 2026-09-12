@@ -1,0 +1,4 @@
+*.obj -diff -text
+*.step -diff -text
+pcb/imports/** linguist-generated=true
+cad/public/pcb/** linguist-generated=true

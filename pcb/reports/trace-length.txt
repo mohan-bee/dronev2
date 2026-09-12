@@ -1,0 +1,27 @@
+Detected entrypoint: 'index.circuit.tsx'
+<TraceLengthAnalysis requestedTarget="net.IMU_SCK" resolvedTarget="net.IMU_SCK" targetKind="net" traceCount="2" totalLengthMm="7.40" totalStraightLineDistanceMm="7.40">
+  <Trace id="source_trace_43:source_port_15" label="U1.IO12 -&gt; net.IMU_SCK" connectionType="via net" lengthMm="3.70" straightLineDistanceMm="3.70">
+    <ConnectedPins>
+      <Pin ref="U1.IO12" />
+      <Pin ref="U2.pin2" />
+    </ConnectedPins>
+    <PinPositions>
+      <Pin ref="U1.IO12" x="-5.95" y="3.47" layers="top" />
+      <Pin ref="U2.pin2" x="0.50" y="-0.16" layers="top" />
+    </PinPositions>
+    <Connection kind="via net" target="net.IMU_SCK" x="-2.73" y="1.66" layer="top" />
+    <TraceRequirements none />
+  </Trace>
+  <Trace id="source_trace_72:source_port_74" label="U2.pin2 -&gt; net.IMU_SCK" connectionType="via net" lengthMm="3.70" straightLineDistanceMm="3.70">
+    <ConnectedPins>
+      <Pin ref="U2.pin2" />
+      <Pin ref="U1.IO12" />
+    </ConnectedPins>
+    <PinPositions>
+      <Pin ref="U2.pin2" x="0.50" y="-0.16" layers="top" />
+      <Pin ref="U1.IO12" x="-5.95" y="3.47" layers="top" />
+    </PinPositions>
+    <Connection kind="via net" target="net.IMU_SCK" x="-2.73" y="1.66" layer="top" />
+    <TraceRequirements none />
+  </Trace>
+</TraceLengthAnalysis>

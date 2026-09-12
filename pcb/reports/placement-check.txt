@@ -1,0 +1,78 @@
+Detected entrypoint: 'index.circuit.tsx'
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `board`. It was passed a child from Drone. See https://react.dev/link/warning-keys for more information.
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 14.982% (692.749mm^2 of 4624mm^2)
+- empty spaces over 5% of board area:
+  - 15.361% (710.281mm^2); bounds=(minX=11.48mm, maxX=34mm, minY=-15.77mm, maxY=15.77mm)
+  - 14.044% (649.373mm^2); bounds=(minX=-34mm, maxX=-24.45mm, minY=-34mm, maxY=34mm)
+  - 8.655% (400.215mm^2); bounds=(minX=-19.52mm, maxX=19.52mm, minY=23.749mm, maxY=34mm)
+  - 5.949% (275.075mm^2); bounds=(minX=-0.72mm, maxX=8.52mm, minY=-34mm, maxY=-4.23mm)
+
+board-edge status:
+- U1: 16.075mm inside bottom edge
+- U2: 30.857mm inside top edge
+- U3: 24.86mm inside top edge
+- L1: 19.922mm inside left edge
+- CIN: 21.3mm inside top edge
+- COUT1: 21.575mm inside left edge
+- COUT2: 22.575mm inside left edge
+- CVINA: 25.525mm inside top edge
+- CBULK: 18.675mm inside top edge
+- CESP: 20.3mm inside bottom edge
+- CESPHF: 21.275mm inside left edge
+- CEN: 20.525mm inside bottom edge
+- CIMU: 29.275mm inside right edge
+- CIMUB: 29.275mm inside right edge
+- CIO: 29.275mm inside right edge
+- CREG: 29.275mm inside left edge
+- CADC: 22.775mm inside right edge
+- REN: 22.775mm inside right edge
+- RBOOT: 22.775mm inside right edge
+- RCS: 29.275mm inside left edge
+- RADCH: 22.775mm inside right edge
+- RADCL: 22.775mm inside right edge
+- TP1: 17.8mm inside right edge
+- TP2: 17.8mm inside right edge
+- TP3: 17.8mm inside right edge
+- TP4: 17.8mm inside right edge
+- TP5: 17.8mm inside right edge
+- TP6: 17.8mm inside right edge
+- BAT1: 16.5mm inside top edge
+- BAT2: 16.5mm inside top edge
+- Q1: 11mm inside right edge
+- D1: 9.8mm inside right edge
+- RG1: 15.275mm inside right edge
+- RPD1: 15.025mm inside bottom edge
+- CM1: 8.025mm inside bottom edge
+- M1_POS: 7mm inside right edge
+- M1_NEG: 4.5mm inside right edge
+- Q2: 11mm inside right edge
+- D2: 9.8mm inside right edge
+- RG2: 15.275mm inside right edge
+- RPD2: 15.025mm inside top edge
+- CM2: 8.025mm inside top edge
+- M2_POS: 7mm inside right edge
+- M2_NEG: 4.5mm inside right edge
+- Q3: 11mm inside left edge
+- D3: 9.8mm inside left edge
+- RG3: 15.275mm inside left edge
+- RPD3: 15.025mm inside top edge
+- CM3: 8.025mm inside top edge
+- M3_POS: 7mm inside left edge
+- M3_NEG: 4.5mm inside left edge
+- Q4: 11mm inside left edge
+- D4: 9.8mm inside left edge
+- RG4: 15.275mm inside left edge
+- RPD4: 15.025mm inside bottom edge
+- CM4: 8.025mm inside bottom edge
+- M4_POS: 7mm inside left edge
+- M4_NEG: 4.5mm inside left edge
+
+placement drc:
+Errors: 0
+Warnings: 0

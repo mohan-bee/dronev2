@@ -1,0 +1,20 @@
+Detected entrypoint: 'index.circuit.tsx'
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `board`. It was passed a child from Drone. See https://react.dev/link/warning-keys for more information.
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U1" positionAnchor="center" schX="0" schY="16" width="1.2" height="6.2" />
+<SchematicBoxPlacement componentName="COUT1" positionAnchor="center" schX="35" schY="8" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="COUT2" positionAnchor="center" schX="38" schY="8" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="CESP" positionAnchor="center" schX="0" schY="8" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="CESPHF" positionAnchor="center" schX="3" schY="8" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="CIMU" positionAnchor="center" schX="32" schY="-12" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="CIMUB" positionAnchor="center" schX="35" schY="-12" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="CIO" positionAnchor="center" schX="38" schY="-12" width="0.9" height="0.6" />
+<SchematicBoxPlacement componentName="REN" positionAnchor="center" schX="0" schY="5" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TraceCanBeSimplifiedByMovingComponent schematicTraceId="schematic_trace_59" targetComponentName="REN" deltaSchX="-2.181" deltaSchY="0" newSchX="-2.181" newSchY="5" currentTurnCount="3" suggestedTurnCount="1" message="move REN left by 2.181 (to schX=-2.181, schY=5) to reduce this trace from 3 turns to 1" />
+<DecouplingCapacitorsNotCloseTogether rail="V3V3" ground="GND" capacitorNames="COUT1, COUT2, CESP, CESPHF, CIMU, CIMUB, CIO" maxBodyGap="41.866" maxRecommendedBodyGap="4" message="Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections." />
+</SchematicPlacementIssues>
