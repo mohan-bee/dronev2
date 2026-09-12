@@ -1,0 +1,23 @@
+{
+  "status": "requirements-only; core does not support pcbkeepout JSX",
+  "regions": [
+    {
+      "name": "IMU copper/via exclusion",
+      "x": 0,
+      "y": -1.5,
+      "width": 2,
+      "height": 2,
+      "layers": ["top", "bottom"],
+      "note": "Inner pad-ring region. Apply TDK under-package layout guidance during copper design."
+    },
+    {
+      "name": "Antenna volume",
+      "x": 0,
+      "y": 25.5,
+      "width": 45.4,
+      "height": 15,
+      "layers": ["top", "bottom"],
+      "note": "Conservative assembly review volume forward of support edge; verify Espressif 15mm clearance against actual antenna geometry and motor/guard parts."
+    }
+  ]
+}
