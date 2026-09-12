@@ -25,5 +25,8 @@
     "tscircuit": "0.0.2527",
     "typescript": "^5.0.0"
   },
-  "author": "mohan-bee"
+  "author": "mohan-bee",
+  "patchedDependencies": {
+    "@tscircuit/checks@0.0.189": "patches/@tscircuit%2Fchecks@0.0.189.patch"
+  }
 }

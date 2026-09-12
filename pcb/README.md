@@ -1,6 +1,10 @@
-# Compact PCB placement
+# Drone PCB routing draft
 
-A 68 × 68 mm X-shaped PCB frame with 58 top-side placed components/pads, 80 mm opposite-motor spacing, four 7.6 mm collar openings, and an ESP32-S3 antenna overhanging the nose. The central body is 36 mm wide; nominal neighboring 46 mm prop discs have 10.57 mm clearance. PCB thickness is 1.0 mm, two layers, FR-4. The fabrication target is 1 oz copper and ENIG, to be specified at order time.
+**Blocked by 96 board-edge trace violations. Do not fabricate.** This branch adds real copper keepouts, explicit power-width constraints, a bottom ground pour, and a conservative pill-hole DRC dependency patch. See [TS_ISSUES.md](../TS_ISSUES.md) for cropped snapshots and reproductions. The updated header placement is in preview/pcb.png; preview/routing.png shows this routing study.
+
+Build and the no-error-records test deliberately fail while these violations remain. Do not bypass DRC to produce fabrication files.
+
+A 68 × 68 mm X-shaped PCB frame with 48 top-side component footprints (including six DNP headers), 80 mm opposite-motor spacing, four 7.6 mm collar openings, and an ESP32-S3 antenna overhanging the nose. The central body is 36 mm wide; nominal neighboring 46 mm prop discs have 10.57 mm clearance. PCB thickness is 1.0 mm, two layers, FR-4. The fabrication target is 1 oz copper and ENIG, to be specified at order time.
 
 ## Run
 
@@ -10,13 +14,13 @@ Requires Bun. Dependencies are locked.
 cd pcb
 bun install --frozen-lockfile
 bun run check
-bun run build -- --routing-disabled --pcb-png --svgs
+bun run build -- --pcb-png --svgs --autorouter-debug --autorouter-timeout 180s --autorouter-dump-srj all
 bun test
 bun run typecheck
 bun run dev
 ```
 
-`index.circuit.tsx` is the source. `geometry.json` owns the outline and motor locations; `keepouts.json` records unenforced copper and mechanical requirements. The CAD viewer consumes the compiled output, not a second hand-placed board.
+`index.circuit.tsx` is the source. `geometry.json` owns the outline and motor locations; `keepouts.json` records copper exclusion intent and the broader mechanical antenna-clearance volume; `index.circuit.tsx` emits the routing keepouts. The CAD viewer consumes the compiled output, not a second hand-placed board.
 
 ## Placement decisions
 
@@ -24,8 +28,8 @@ bun run dev
 - U2 at (0, -1.5), rotated 180°: near the center with local VDD/VDDIO/REGOUT capacitors. Configure firmware sensor axes from the actual package orientation.
 - U3 and L1 form a compact cluster at the rear-left battery input. Input/output bypassing stays local; route these switching loops manually first. PS/SYNC is tied to VBAT for forced PWM; FB returns to V3V3.
 - One Q/D/RG/RPD/CM group on each arm. Motor solder pads and flyback diodes stay close to the drain; GPIO gate traces travel inward. CM footprints are across motor terminals, not VBAT–GND. Also fit suppression at actual motor terminals if noise tests require it.
-- Programming pads along the right edge. TP1 GND, TP2 **3V3_TEST**, TP3 controller TX, TP4 controller RX, TP5 EN, TP6 BOOT. TP2 is a measurement point, not an invitation to parallel an external supply with the regulator. Use a 3.3 V logic programmer.
-- BAT1 is positive, BAT2 negative. Use a polarity-verified battery pigtail; no unverified connector footprint is assumed.
+- DNP programming header JPROG along the right edge: pin 1 GND, pin 2 **3V3_TEST**, pin 3 controller TX, pin 4 controller RX, pin 5 EN, pin 6 BOOT. Pin 2 is a measurement point, not an invitation to parallel an external supply with the regulator. Use a 3.3 V logic programmer.
+- DNP battery header JBAT: pin 1 VBAT, pin 2 GND. Motor headers JM1–JM4: pin 1 VBAT, pin 2 switched motor negative. All six headers use 2.54 mm pitch and doNotPlace=true; holes remain available for direct wire soldering or later hand assembly.
 - Holes H5/H6 reserve potential printed-part attachment locations; no hardware should press beneath the IMU.
 
 ## Pin assignment

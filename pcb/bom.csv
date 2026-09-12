@@ -15,3 +15,5 @@ RADCH RADCL RPD1 RPD2 RPD3 RPD4,6,C25803,,simple_resistor,Candidate; verify inve
 Q1 Q2 Q3 Q4,4,C20917,AO3400A,simple_chip,Candidate; verify inventory and ratings
 D1 D2 D3 D4,4,C8678,SS34,simple_diode,Candidate; verify inventory and ratings
 RG1 RG2 RG3 RG4,4,C22775,,simple_resistor,Candidate; verify inventory and ratings
+JPROG,1,,,6-pin 2.54mm pin header,DNP; footprint only
+JBAT JM1 JM2 JM3 JM4,5,,,2-pin 2.54mm pin header,DNP; footprint only

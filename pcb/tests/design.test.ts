@@ -5,6 +5,23 @@ const data = JSON.parse(
   readFileSync(new URL("../dist/index/circuit.json", import.meta.url), "utf8"),
 );
 const components = data.filter((x: any) => x.type === "source_component");
+test("DNP headers retain all connection holes and pin assignments", () => {
+  for (const name of ["JPROG", "JBAT", "JM1", "JM2", "JM3", "JM4"]) {
+    const source = components.find((x: any) => x.name === name);
+    expect(source).toBeDefined();
+    const pcb = data.find((x: any) => x.type === "pcb_component" && x.source_component_id === source.source_component_id);
+    expect(pcb.do_not_place).toBe(true);
+    expect(data.filter((x: any) => x.type === "pcb_plated_hole" && x.pcb_component_id === pcb.pcb_component_id)).toHaveLength(name === "JPROG" ? 6 : 2);
+  }
+  expect(components.some((x: any) => x.ftype === "simple_test_point")).toBe(false);
+  ["GND", "V3V3", "UART_TX", "UART_RX", "EN", "BOOT"].forEach((n, i) => expect(net("JPROG", i + 1)).toBe(n));
+  expect(net("JBAT", 1)).toBe("VBAT");
+  expect(net("JBAT", 2)).toBe("GND");
+  for (let i = 1; i <= 4; i++) {
+    expect(net(`JM${i}`, 1)).toBe("VBAT");
+    expect(net(`JM${i}`, 2)).toBe(`M${i}_SWITCHED`);
+  }
+});
 const net = (ref: string, pin: number) => {
   const c = components.find((x: any) => x.name === ref);
   const p = data.find(
@@ -45,27 +62,27 @@ test("sensor reserved pins and reference capacitor have distinct handling", () =
 test("all four motor stages use VBAT, flyback diodes, gate pulls and terminal capacitors", () => {
   for (let n = 1; n <= 4; n++) {
     expect(net(`D${n}`, 1)).toBe("VBAT");
-    expect(net(`D${n}`, 2)).toBe(`M${n}_NEG`);
+    expect(net(`D${n}`, 2)).toBe(`M${n}_SWITCHED`);
     expect(net(`Q${n}`, 1)).toBe(`M${n}_GATE`);
     expect(net(`Q${n}`, 2)).toBe("GND");
-    expect(net(`Q${n}`, 3)).toBe(`M${n}_NEG`);
+    expect(net(`Q${n}`, 3)).toBe(`M${n}_SWITCHED`);
     expect(net(`RG${n}`, 1)).toBe(net("U1", 34 + n));
     expect(net(`RG${n}`, 2)).toBe(`M${n}_GATE`);
     expect(net(`RPD${n}`, 1)).toBe(`M${n}_GATE`);
     expect(net(`RPD${n}`, 2)).toBe("GND");
     expect(net(`CM${n}`, 1)).toBe("VBAT");
-    expect(net(`CM${n}`, 2)).toBe(`M${n}_NEG`);
+    expect(net(`CM${n}`, 2)).toBe(`M${n}_SWITCHED`);
   }
 });
-test("placement output has no error records, no routing and correct mechanics", () => {
+test("placement output has no error records, routing and correct mechanics", () => {
   expect(data.filter((x: any) => x.type.endsWith("_error"))).toEqual([]);
-  expect(data.filter((x: any) => x.type === "pcb_trace")).toHaveLength(0);
+  expect(data.filter((x: any) => x.type === "pcb_trace").length).toBeGreaterThan(0);
   expect(
     data
       .filter((x: any) => x.type === "pcb_component")
       .every((x: any) => x.layer === "top"),
   ).toBe(true);
-  expect(data.filter((x: any) => x.type === "pcb_component")).toHaveLength(58);
+  expect(data.filter((x: any) => x.type === "pcb_component")).toHaveLength(48);
   expect(
     Math.hypot(
       geometry.motors[0].x - geometry.motors[2].x,

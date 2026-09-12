@@ -68,11 +68,26 @@ export default function Drone() {
       outline={geometry.outline.map(([x, y]) => ({ x, y }))}
       thickness={1}
       layers={2}
-      routingDisabled
+      autorouter={{ local: true, allowViaInPad: false }}
+      minTraceWidth={0.15}
+      nominalTraceWidth={0.2}
+      minViaHoleDiameter={0.3}
+      minViaPadDiameter={0.6}
+      minBoardEdgeClearance={0.3}
     >
-      <net name="GND" isGroundNet />
-      <net name="VBAT" isPowerNet />
-      <net name="V3V3" isPowerNet />
+      <net name="GND" isGroundNet nominalTraceWidth={0.5} />
+      <net name="VBAT" isPowerNet nominalTraceWidth={0.8} />
+      <net name="V3V3" isPowerNet nominalTraceWidth={0.3} />
+      <trace from=".JBAT > .pin1" to="net.VBAT" thickness={0.8} />
+      <trace from=".JBAT > .pin2" to="net.GND" thickness={0.5} />
+      <trace from=".COUT1 > .pin1" to="net.V3V3" thickness={0.3} />
+      <trace from=".L1 > .pin1" to="net.SW_L1" thickness={0.6} />
+      <trace from=".L1 > .pin2" to="net.SW_L2" thickness={0.6} />
+      {geometry.motors.map((m) => <trace from={`.J${m.name} > .pin2`}
+        to={`net.${m.name}_SWITCHED`} thickness={0.8} />)}
+      <net name="SW_L1" nominalTraceWidth={0.6} />
+      <net name="SW_L2" nominalTraceWidth={0.6} />
+      {geometry.motors.map((m) => <net name={`${m.name}_SWITCHED`} nominalTraceWidth={0.8} />)}
       {Object.keys(origins).map((name) => (
         <schematicsection name={name} />
       ))}
@@ -185,9 +200,9 @@ export default function Drone() {
       ].map(([pin, net]) => connection(`.U2 > .pin${pin}`, String(net)))}
       {[
         [1, "V3V3"],
-        [2, "L2"],
+        [2, "SW_L2"],
         [3, "GND"],
-        [4, "L1"],
+        [4, "SW_L1"],
         [5, "VBAT"],
         [6, "VBAT"],
         [7, "VBAT"],
@@ -196,38 +211,24 @@ export default function Drone() {
         [10, "V3V3"],
         [11, "GND"],
       ].map(([pin, net]) => connection(`.U3 > .pin${pin}`, String(net)))}
-      {connection(".L1 > .pin1", "L1")}
-      {connection(".L1 > .pin2", "L2")}
-      {/* Copper-only keepouts within the IMU pad ring; do not block its perimeter pads. */}
+      {connection(".L1 > .pin1", "SW_L1")}
+      {connection(".L1 > .pin2", "SW_L2")}
+      <keepout shape="rect" pcbX={0} pcbY={-1.5} width={2} height={2}
+        layers={["top", "bottom"]} excludeRefs={[".U2"]} />
+      <keepout shape="rect" pcbX={-18} pcbY={12.5} width={0.6} height={1.8}
+        layers={["top", "bottom"]} />
+      <copperpour connectsTo="net.GND" layer="bottom" clearance={0.2} boardEdgeMargin={0.4} />
+      <keepout shape="rect" pcbX={0} pcbY={21} width={15.4} height={6}
+        layers={["top", "bottom"]} />
       {/* Antenna has no supporting PCB from y=18 onward. Reserve this volume in CAD too. */}
-      {["GND", "V3V3", "UART_TX", "UART_RX", "EN", "BOOT"].map((net, i) => (
-        <testpoint
-          key={net}
-          name={`TP${i + 1}`}
-          footprintVariant="pad"
-          padDiameter={1.4}
-          pcbX={15.5}
-          pcbY={6 - i * 2.54}
-          schX={-20 + i * 3}
-          schY={-20}
-          schSectionName="Programming"
-          connections={{ pin1: `net.${net}` }}
-        />
-      ))}
-      {["VBAT", "GND"].map((net, i) => (
-        <testpoint
-          key={net}
-          name={`BAT${i + 1}`}
-          footprintVariant="pad"
-          padDiameter={3}
-          pcbX={-13 + i * 5}
-          pcbY={-16}
-          schX={45 + i * 4}
-          schY={15}
-          schSectionName="Power"
-          connections={{ pin1: `net.${net}` }}
-        />
-      ))}
+      <pinheader name="JPROG" pinCount={6} pitch={2.54} doNotPlace
+        pcbX={16} pcbY={-0.35} pcbRotation={90}
+        schX={-13} schY={-20} schSectionName="Programming"
+        connections={{pin1: "net.GND", pin2: "net.V3V3", pin3: "net.UART_TX",
+          pin4: "net.UART_RX", pin5: "net.EN", pin6: "net.BOOT"}} />
+      <pinheader name="JBAT" pinCount={2} pitch={2.54} doNotPlace
+        pcbX={-10.5} pcbY={-16} schX={47} schY={15} schSectionName="Power"
+        connections={{pin1: "net.VBAT", pin2: "net.GND"}} />
       {geometry.motors.map((m, i) => {
         const sx = Math.sign(m.x),
           sy = Math.sign(m.y),
@@ -252,19 +253,19 @@ export default function Drone() {
               connections={{
                 G: `net.M${n}_GATE`,
                 S: "net.GND",
-                D: `net.M${n}_NEG`,
+                D: `net.M${n}_SWITCHED`,
               }}
             />
             <SS34
               schRotation={-90}
               name={`D${n}`}
-              pcbX={sx * 21}
+              pcbX={sx * 20.65}
               pcbY={sy * 22}
               pcbRotation={0}
               schX={ox + 4}
               schY={-32}
               schSectionName={sec}
-              connections={{ cathode: "net.VBAT", anode: `net.M${n}_NEG` }}
+              connections={{ cathode: "net.VBAT", anode: `net.M${n}_SWITCHED` }}
             />
             <resistor
               name={`RG${n}`}
@@ -305,22 +306,13 @@ export default function Drone() {
               schX={ox + 7}
               schY={-35}
               schSectionName={sec}
-              connections={{ pin1: "net.VBAT", pin2: `net.M${n}_NEG` }}
+              connections={{ pin1: "net.VBAT", pin2: `net.M${n}_SWITCHED` }}
             />
-            {["VBAT", `M${n}_NEG`].map((net, j) => (
-              <testpoint
-                key={net}
-                name={`M${n}_${j === 0 ? "POS" : "NEG"}`}
-                footprintVariant="pad"
-                padDiameter={2}
-                pcbX={sx * (26 + j * 2.5)}
-                pcbY={sy * 21.5}
-                schX={ox + 4 + j * 3}
-                schY={-39}
-                schSectionName={sec}
-                connections={{ pin1: `net.${net}` }}
-              />
-            ))}
+            <pinheader name={`JM${n}`} pinCount={2} pitch={2.54} doNotPlace
+              pcbX={sx * 27.25} pcbY={sy * 21.5}
+              pcbRotation={sx < 0 ? 180 : 0}
+              schX={ox + 5.5} schY={-39} schSectionName={sec}
+              connections={{pin1: "net.VBAT", pin2: `net.M${n}_SWITCHED`}} />
           </Fragment>
         );
       })}
