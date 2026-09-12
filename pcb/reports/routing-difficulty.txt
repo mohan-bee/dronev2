@@ -1,0 +1,992 @@
+Detected entrypoint: 'index.circuit.tsx'
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `board`. It was passed a child from Drone. See https://react.dev/link/warning-keys for more information.
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+<CongestedRegion probabilityOfFailure="8.8%" left="-6.6mm" right="6.5mm" bottom="12.8mm" top="17.1mm" width="13.1mm" height="4.4mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="4.375mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="2.225mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="REN" edgeDistance="2.847mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="CESP" edgeDistance="3.5mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+    <NearbyComponent name="CESPHF" edgeDistance="4.104mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-12.7mm" right="-10.3mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="RBOOT" edgeDistance="4.82mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="8.1%" left="6.5mm" right="6.6mm" bottom="14.7mm" top="14.9mm" width="0.0mm" height="0.2mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.026mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="2.523mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="REN" edgeDistance="4.336mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="8.1%" left="6.5mm" right="6.6mm" bottom="16.2mm" top="16.4mm" width="0.0mm" height="0.2mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.026mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="3.518mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="5.5%" left="-1.1mm" right="-0.9mm" bottom="-3.1mm" top="-2.5mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.135mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.269mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.135mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.312mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.527mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.528mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="4.5%" left="6.6mm" right="7.4mm" bottom="13.3mm" top="13.5mm" width="0.8mm" height="0.2mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.225mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="1.4mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="REN" edgeDistance="2.671mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="RBOOT" edgeDistance="4.976mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="4.4%" left="7.4mm" right="8.8mm" bottom="7.9mm" top="13.5mm" width="1.4mm" height="5.6mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.025mm" directions="left,bottom,top" freeSpaceOnLeft="2.7mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="0mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="RBOOT" edgeDistance="0mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.5mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+    <NearbyComponent name="REN" edgeDistance="0mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="2.7%" left="-0.9mm" right="-0.6mm" bottom="-3.1mm" top="-2.5mm" width="0.2mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.22mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.415mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.525mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.915mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.104mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.379mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.605mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="2.1%" left="-0.6mm" right="-0.4mm" bottom="-3.1mm" top="-2.5mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.635mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.731mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.635mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="2.843mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.198mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.677mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="1.7%" left="-0.4mm" right="-0.1mm" bottom="-3.1mm" top="-2.5mm" width="0.2mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.22mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.915mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.997mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.415mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="2.64mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.063mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.782mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="1.4%" left="-0.1mm" right="0.1mm" bottom="-3.1mm" top="-2.5mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.135mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.135mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CREG" edgeDistance="2.209mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMU" edgeDistance="2.387mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.903mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.875mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="1%" left="0.1mm" right="0.4mm" bottom="-3.1mm" top="-2.5mm" width="0.2mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.22mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.915mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="2.193mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.415mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="2.481mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.788mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.9%" left="-7.8mm" right="-7.6mm" bottom="-8.6mm" top="-8.4mm" width="0.2mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.225mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="L1" edgeDistance="2.097mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CIN" edgeDistance="2.764mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="CVINA" edgeDistance="2.875mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.787mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.8%" left="0.4mm" right="0.6mm" bottom="-3.1mm" top="-2.5mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.635mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.953mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.635mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="2.695mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.654mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.8%" left="1.0mm" right="1.6mm" bottom="-1.1mm" top="-0.9mm" width="0.6mm" height="0.3mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0.632mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.432mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="1.706mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.318mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.595mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U1" edgeDistance="3.935mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.7%" left="-7.4mm" right="-6.6mm" bottom="16.3mm" top="16.7mm" width="0.8mm" height="0.4mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CESP" edgeDistance="3.714mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.7%" left="-8.5mm" right="-7.8mm" bottom="-8.6mm" top="-8.4mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="L1" edgeDistance="1.432mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CIN" edgeDistance="2.661mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="CVINA" edgeDistance="3.1mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.911mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.7%" left="-8.5mm" right="-7.8mm" bottom="-9.6mm" top="-9.4mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="L1" edgeDistance="1.432mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CIN" edgeDistance="1.662mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="CVINA" edgeDistance="3.224mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.129mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="BAT2" edgeDistance="4.86mm" directions="bottom" freeSpaceOnLeft="2.0mm" freeSpaceOnRight="1.5mm" freeSpaceBelow=">5.0mm" left="-9.5mm" right="-6.5mm" bottom="-17.5mm" top="-14.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.7%" left="-6.2mm" right="-5.5mm" bottom="-9.6mm" top="-9.4mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="1.183mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="2.918mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="CBULK" edgeDistance="3.074mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="L1" edgeDistance="3.747mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="BAT2" edgeDistance="4.871mm" directions="left,bottom" freeSpaceOnLeft="2.0mm" freeSpaceBelow=">5.0mm" left="-9.5mm" right="-6.5mm" bottom="-17.5mm" top="-14.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.5%" left="-1.1mm" right="0.0mm" bottom="-3.4mm" top="-3.1mm" width="1.1mm" height="0.2mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" directions="top" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.135mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.628mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.275mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="2.821mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.302mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.487mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.4%" left="-1.1mm" right="-1.0mm" bottom="-2.5mm" top="-2.1mm" width="0.1mm" height="0.4mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.097mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.135mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.147mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.318mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.384mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.383mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.4%" left="-1.1mm" right="-1.0mm" bottom="-0.9mm" top="-0.5mm" width="0.1mm" height="0.4mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.097mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.147mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.015mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.318mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.522mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U1" edgeDistance="3.532mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.668mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.4%" left="1.0mm" right="1.1mm" bottom="-0.9mm" top="-0.5mm" width="0.1mm" height="0.4mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.097mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.135mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="1.639mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.933mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.322mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="U1" edgeDistance="3.532mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.712mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.4%" left="0.6mm" right="0.9mm" bottom="-3.1mm" top="-2.5mm" width="0.2mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.22mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.415mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.773mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.915mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="2.97mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.561mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.4%" left="-7.4mm" right="-6.6mm" bottom="16.7mm" top="17.1mm" width="0.8mm" height="0.5mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.45mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CESP" edgeDistance="3.999mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="0.9mm" right="1.1mm" bottom="-0.5mm" top="0.1mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.137mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="1.276mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.272mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="U1" edgeDistance="2.932mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.186mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.755mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="-1.1mm" right="-0.9mm" bottom="-0.5mm" top="0.1mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.269mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.359mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U1" edgeDistance="2.932mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.136mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.189mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.701mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="-1.6mm" right="-1.0mm" bottom="-2.1mm" top="-1.9mm" width="0.6mm" height="0.3mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CREG" edgeDistance="0.632mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="0.74mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.33mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.34mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.206mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U1" edgeDistance="4.935mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="0.9mm" right="1.1mm" bottom="-3.1mm" top="-2.5mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.135mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.558mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.135mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.186mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.459mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="1.0mm" right="1.6mm" bottom="-1.6mm" top="-1.4mm" width="0.6mm" height="0.3mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0.632mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.008mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="2.179mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.318mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.434mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U1" edgeDistance="4.435mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="-8.5mm" right="-7.8mm" bottom="-7.6mm" top="-7.4mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="L1" edgeDistance="1.432mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CVINA" edgeDistance="3.1mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.661mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="COUT2" edgeDistance="4.161mm" directions="left,top" freeSpaceOnLeft="1.1mm" freeSpaceAbove=">5.0mm" left="-11.4mm" right="-8.6mm" bottom="-3.2mm" top="-1.8mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.97mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="-6.2mm" right="-5.5mm" bottom="-7.6mm" top="-7.4mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="0.785mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="L1" edgeDistance="3.747mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.964mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="4.377mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="COUT2" edgeDistance="4.803mm" directions="left,top" freeSpaceOnLeft="1.1mm" freeSpaceAbove=">5.0mm" left="-11.4mm" right="-8.6mm" bottom="-3.2mm" top="-1.8mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="-6.2mm" right="-5.5mm" bottom="-8.1mm" top="-7.9mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="0.785mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="L1" edgeDistance="3.747mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.968mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.455mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.561mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="-6.2mm" right="-5.5mm" bottom="-8.6mm" top="-8.4mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="0.785mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.583mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="L1" edgeDistance="3.747mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.064mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.948mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.3%" left="-6.2mm" right="-5.5mm" bottom="-9.1mm" top="-8.9mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="0.874mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.229mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="CBULK" edgeDistance="3.568mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="L1" edgeDistance="3.747mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="1.6mm" right="2.3mm" bottom="-2.6mm" top="-0.5mm" width="0.6mm" height="2.1mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0mm" directions="left,bottom,top" freeSpaceOnLeft="0.6mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="0mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="1.2mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U1" edgeDistance="3.55mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.918mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.918mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-2.3mm" right="-1.6mm" bottom="-2.1mm" top="-1.0mm" width="0.6mm" height="1.1mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0mm" directions="right,bottom,top" freeSpaceOnRight="0.6mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CREG" edgeDistance="0mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="0.385mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.918mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.928mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="U1" edgeDistance="4.1mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.291mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="1.1mm" right="1.6mm" bottom="-0.9mm" top="0.1mm" width="0.5mm" height="1.0mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.503mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0.632mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="0.86mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.688mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="U1" edgeDistance="2.932mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.419mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.799mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-19.8mm" right="-17.9mm" bottom="-19.0mm" top="-18.6mm" width="1.9mm" height="0.4mm">
+    <NearbyComponent name="RPD3" edgeDistance="0mm" overlapDepth="0.35mm" directions="right,bottom,top" freeSpaceOnRight=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="Q3" edgeDistance="0.2mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="-23.0mm" right="-20.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="RG3" edgeDistance="1.65mm" directions="top" freeSpaceOnLeft="1.3mm" freeSpaceOnRight="1.8mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="D3" edgeDistance="2.025mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="-23.0mm" top="-21.0mm" />
+    <NearbyComponent name="BAT1" edgeDistance="3.605mm" directions="right,top" freeSpaceOnRight="2.0mm" freeSpaceAbove="4.3mm" left="-14.5mm" right="-11.5mm" bottom="-17.5mm" top="-14.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-7.4mm" right="-6.6mm" bottom="15.4mm" top="15.8mm" width="0.8mm" height="0.4mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CESP" edgeDistance="3.191mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="6.6mm" right="7.4mm" bottom="13.7mm" top="14.1mm" width="0.8mm" height="0.4mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="1.418mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="REN" edgeDistance="3.064mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="6.6mm" right="7.4mm" bottom="14.6mm" top="15.0mm" width="0.8mm" height="0.4mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="1.765mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="REN" edgeDistance="3.839mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="5.7mm" right="6.1mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="4.496mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="4.9mm" right="5.3mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="4.0mm" right="4.4mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="3.2mm" right="3.6mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="2.3mm" right="2.7mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="1.5mm" right="1.9mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="0.6mm" right="1.0mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-0.2mm" right="0.2mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-1.0mm" right="-0.6mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-1.9mm" right="-1.5mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-2.7mm" right="-2.3mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-3.6mm" right="-3.2mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-4.4mm" right="-4.0mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-5.3mm" right="-4.9mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-6.1mm" right="-5.7mm" bottom="17.1mm" top="17.9mm" width="0.4mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.4mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-7.4mm" right="-6.6mm" bottom="17.1mm" top="17.9mm" width="0.8mm" height="0.8mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CESP" edgeDistance="4.326mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-3.1mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CVINA" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="U3" edgeDistance="2.435mm" directions="left" freeSpaceOnLeft="1.4mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.9mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.05mm" directions="top" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.2mm" directions="bottom" freeSpaceOnLeft="1.5mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="U2" edgeDistance="4.428mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="8.8mm" right="9.6mm" bottom="12.5mm" top="13.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CEN" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="U1" edgeDistance="1.375mm" directions="left" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="REN" edgeDistance="1.55mm" directions="bottom" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="RBOOT" edgeDistance="4.05mm" directions="bottom" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="2.3mm" right="3.1mm" bottom="0.7mm" top="1.7mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CIO" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U2" edgeDistance="0.86mm" directions="left,bottom" freeSpaceOnLeft="0.6mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.25mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="U1" edgeDistance="1.4mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.15mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CREG" edgeDistance="4.875mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="3.9mm" right="4.7mm" bottom="0.7mm" top="1.7mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CIO" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.25mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="U1" edgeDistance="1.4mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="U2" edgeDistance="2.355mm" directions="left,bottom" freeSpaceOnLeft="0.6mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.15mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="RADCH" edgeDistance="4.239mm" directions="right,bottom" freeSpaceOnRight="3.6mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="8.8mm" right="9.6mm" bottom="7.5mm" top="8.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="RBOOT" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+    <NearbyComponent name="U1" edgeDistance="1.375mm" directions="left" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="REN" edgeDistance="1.55mm" directions="top" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="CEN" edgeDistance="4.05mm" directions="top" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="8.8mm" right="9.6mm" bottom="-1.5mm" top="-0.5mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RADCH" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="RADCL" edgeDistance="1.05mm" directions="bottom" freeSpaceOnLeft="4.0mm" freeSpaceOnRight="3.6mm" freeSpaceBelow="4.0mm" left="8.8mm" right="11.2mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U1" edgeDistance="3.854mm" directions="left,top" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMU" edgeDistance="4.05mm" directions="left" freeSpaceOnLeft="0.6mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="4.16mm" directions="left,bottom" freeSpaceOnLeft="0.6mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.239mm" directions="left,top" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-7.4mm" right="-6.6mm" bottom="15.8mm" top="16.3mm" width="0.8mm" height="0.4mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.45mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CESP" edgeDistance="3.421mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.2%" left="-6.4mm" right="-6.2mm" bottom="-8.1mm" top="-7.9mm" width="0.2mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.225mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="1.45mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="L1" edgeDistance="3.522mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.836mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.619mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.678mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="16.8mm" right="19.9mm" bottom="17.0mm" top="18.0mm" width="3.1mm" height="1.0mm">
+    <NearbyComponent name="RG1" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="RPD1" edgeDistance="0mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="Q1" edgeDistance="0.05mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="20.0mm" right="23.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="D1" edgeDistance="2.975mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceAbove=">5.0mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="1.6mm" right="2.3mm" bottom="-0.5mm" top="1.7mm" width="0.6mm" height="2.1mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0mm" directions="left,bottom" freeSpaceOnLeft="0.6mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIO" edgeDistance="0mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" freeSpaceBelow="1.2mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0.05mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="U1" edgeDistance="1.4mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.95mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.956mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.422mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-2.3mm" right="-1.1mm" bottom="-3.4mm" top="-2.1mm" width="1.1mm" height="1.2mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.503mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="RCS" edgeDistance="0mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="0.165mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.415mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.479mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.15mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.458mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="8.8mm" right="11.2mm" bottom="8.5mm" top="10.0mm" width="2.4mm" height="1.5mm">
+    <NearbyComponent name="RBOOT" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+    <NearbyComponent name="REN" edgeDistance="0mm" directions="top" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="U1" edgeDistance="1.375mm" directions="left" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="2.5mm" directions="top" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="TP1" edgeDistance="3.991mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.1mm" left="14.8mm" right="16.2mm" bottom="5.3mm" top="6.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-18.7mm" right="-18.2mm" bottom="-18.0mm" top="-17.0mm" width="0.5mm" height="1.0mm">
+    <NearbyComponent name="RG3" edgeDistance="0mm" directions="top" freeSpaceOnLeft="1.3mm" freeSpaceOnRight="1.8mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="RPD3" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft="1.3mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="Q3" edgeDistance="1.275mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="-23.0mm" right="-20.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="D3" edgeDistance="2.975mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="-23.0mm" top="-21.0mm" />
+    <NearbyComponent name="BAT1" edgeDistance="3.7mm" directions="right" freeSpaceOnRight="2.0mm" freeSpaceAbove="4.3mm" freeSpaceBelow=">5.0mm" left="-14.5mm" right="-11.5mm" bottom="-17.5mm" top="-14.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-13.4mm" right="-12.0mm" bottom="-18.0mm" top="-17.5mm" width="1.4mm" height="0.5mm">
+    <NearbyComponent name="BAT1" edgeDistance="0mm" directions="top" freeSpaceOnLeft="1.8mm" freeSpaceOnRight="2.0mm" freeSpaceAbove="4.3mm" left="-14.5mm" right="-11.5mm" bottom="-17.5mm" top="-14.5mm" />
+    <NearbyComponent name="BAT2" edgeDistance="2.5mm" directions="right,top" freeSpaceOnRight="1.5mm" freeSpaceAbove="1.8mm" left="-9.5mm" right="-6.5mm" bottom="-17.5mm" top="-14.5mm" />
+    <NearbyComponent name="RPD3" edgeDistance="2.83mm" directions="left,bottom" freeSpaceOnLeft="1.3mm" freeSpaceBelow=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="RG3" edgeDistance="2.878mm" directions="left,top" freeSpaceOnLeft="1.3mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="CIN" edgeDistance="4.834mm" directions="right,top" freeSpaceOnRight="3.5mm" freeSpaceAbove="1.1mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-4.7mm" right="-2.3mm" bottom="-2.5mm" top="-2.0mm" width="2.4mm" height="0.5mm">
+    <NearbyComponent name="CREG" edgeDistance="0mm" directions="top" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U2" edgeDistance="0.632mm" directions="right" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="COUT2" edgeDistance="3.85mm" directions="left" freeSpaceOnLeft="1.1mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="3.6mm" left="-11.4mm" right="-8.6mm" bottom="-3.2mm" top="-1.8mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="4.55mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="4.577mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="U3" edgeDistance="4.898mm" directions="left,bottom" freeSpaceOnLeft="1.4mm" freeSpaceBelow="4.9mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="5mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-1.6mm" right="-1.1mm" bottom="-0.9mm" top="0.1mm" width="0.5mm" height="1.0mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.503mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CREG" edgeDistance="0.654mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.781mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U1" edgeDistance="2.932mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.415mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.464mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.757mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="1.1mm" right="2.3mm" bottom="-3.4mm" top="-2.6mm" width="1.1mm" height="0.8mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.503mm" directions="left,top" freeSpaceOnLeft="0.6mm" freeSpaceAbove="2.9mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="0mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.15mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.35mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.415mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.476mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="2.3mm" right="3.1mm" bottom="-0.5mm" top="0.7mm" width="0.8mm" height="1.3mm">
+    <NearbyComponent name="CIMU" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="0mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U2" edgeDistance="0.632mm" directions="left" freeSpaceOnLeft="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="1.9mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="U1" edgeDistance="2.35mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CREG" edgeDistance="4.577mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.97mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="3.1mm" right="3.9mm" bottom="0.7mm" top="1.7mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CIO" edgeDistance="0mm" overlapDepth="0.85mm" directions="left,right,bottom,top" regionWithinComponent left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.25mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="U1" edgeDistance="1.4mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="U2" edgeDistance="1.546mm" directions="left,bottom" freeSpaceOnLeft="0.6mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.15mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="10.4mm" right="11.2mm" bottom="7.5mm" top="8.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="RBOOT" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+    <NearbyComponent name="REN" edgeDistance="1.55mm" directions="top" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="U1" edgeDistance="3.025mm" directions="left" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="TP1" edgeDistance="3.669mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.1mm" left="14.8mm" right="16.2mm" bottom="5.3mm" top="6.7mm" />
+    <NearbyComponent name="CEN" edgeDistance="4.05mm" directions="top" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="TP2" edgeDistance="4.91mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.1mm" left="14.8mm" right="16.2mm" bottom="2.8mm" top="4.2mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="14.8mm" right="16.2mm" bottom="6.7mm" top="7.5mm" width="1.4mm" height="0.8mm">
+    <NearbyComponent name="TP1" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.1mm" left="14.8mm" right="16.2mm" bottom="5.3mm" top="6.7mm" />
+    <NearbyComponent name="TP2" edgeDistance="2.54mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.1mm" left="14.8mm" right="16.2mm" bottom="2.8mm" top="4.2mm" />
+    <NearbyComponent name="RBOOT" edgeDistance="3.575mm" directions="left,top" freeSpaceOnLeft="1.4mm" freeSpaceAbove="1.5mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+    <NearbyComponent name="REN" edgeDistance="4.362mm" directions="left,top" freeSpaceOnLeft="1.4mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="16.3mm" right="16.8mm" bottom="17.0mm" top="18.0mm" width="0.5mm" height="1.0mm">
+    <NearbyComponent name="RG1" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="RPD1" edgeDistance="0mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="D1" edgeDistance="3.139mm" directions="right,top" freeSpaceOnRight="0.8mm" freeSpaceAbove=">5.0mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+    <NearbyComponent name="Q1" edgeDistance="3.2mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="20.0mm" right="23.0mm" bottom="16.7mm" top="19.3mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="18.7mm" right="19.9mm" bottom="18.0mm" top="19.0mm" width="1.2mm" height="1.0mm">
+    <NearbyComponent name="RPD1" edgeDistance="0mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="Q1" edgeDistance="0.05mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="20.0mm" right="23.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="RG1" edgeDistance="1.05mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="D1" edgeDistance="2.025mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceAbove=">5.0mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-3.1mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RCS" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="0.55mm" directions="top" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="U2" edgeDistance="0.632mm" directions="right" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.05mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="4.55mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="U3" edgeDistance="4.585mm" directions="left,bottom" freeSpaceOnLeft="1.4mm" freeSpaceBelow="4.9mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="4.67mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-3.1mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="CREG" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="0.55mm" directions="bottom" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U2" edgeDistance="0.632mm" directions="right" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="U1" edgeDistance="4.1mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMU" edgeDistance="4.55mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="4.572mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="4.875mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="17.9mm" right="18.9mm" bottom="16.0mm" top="17.0mm" width="1.0mm" height="1.0mm">
+    <NearbyComponent name="RG1" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,bottom,top" freeSpaceOnLeft=">5.0mm" left="16.3mm" right="18.7mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="RPD1" edgeDistance="1.05mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="Q1" edgeDistance="1.063mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="20.0mm" right="23.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="D1" edgeDistance="4.025mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceAbove=">5.0mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="18.9mm" right="20.0mm" bottom="16.7mm" top="17.0mm" width="1.0mm" height="0.2mm">
+    <NearbyComponent name="Q1" edgeDistance="0.05mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="20.0mm" right="23.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="RG1" edgeDistance="0.213mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="1.0mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="RPD1" edgeDistance="1.071mm" directions="left,top" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="D1" edgeDistance="4.025mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceAbove=">5.0mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="0.4mm" right="0.6mm" bottom="-0.5mm" top="0.1mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="1.637mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="1.736mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.558mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CREG" edgeDistance="2.695mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="U1" edgeDistance="2.932mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.349mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-0.1mm" right="0.1mm" bottom="-0.5mm" top="0.1mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMU" edgeDistance="2.136mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="2.209mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="CIO" edgeDistance="2.213mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="2.903mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="U1" edgeDistance="2.932mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.972mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-0.6mm" right="-0.4mm" bottom="-0.5mm" top="0.1mm" width="0.3mm" height="0.6mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CREG" edgeDistance="1.731mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="2.636mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CIMU" edgeDistance="2.636mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="2.699mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U1" edgeDistance="2.932mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.289mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-1.6mm" right="-1.0mm" bottom="-1.1mm" top="-0.9mm" width="0.6mm" height="0.3mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CREG" edgeDistance="0.632mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="1.523mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CIMU" edgeDistance="3.318mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="3.558mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.677mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U1" edgeDistance="3.935mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="1.0mm" right="1.6mm" bottom="-2.1mm" top="-1.9mm" width="0.6mm" height="0.3mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="0.694mm" directions="right,bottom" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0.74mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="2.661mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.318mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.34mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U1" edgeDistance="4.935mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-8.5mm" right="-7.8mm" bottom="-8.1mm" top="-7.9mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="L1" edgeDistance="1.432mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CVINA" edgeDistance="3.1mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.161mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="COUT2" edgeDistance="4.661mm" directions="left,top" freeSpaceOnLeft="1.1mm" freeSpaceAbove=">5.0mm" left="-11.4mm" right="-8.6mm" bottom="-3.2mm" top="-1.8mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-8.5mm" right="-7.8mm" bottom="-9.1mm" top="-8.9mm" width="0.7mm" height="0.3mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.28mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="L1" edgeDistance="1.432mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CIN" edgeDistance="2.162mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="CVINA" edgeDistance="3.124mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.509mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-7.6mm" right="-6.4mm" bottom="-9.5mm" top="-7.5mm" width="1.2mm" height="2.0mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="1.2mm" directions="left,right,bottom,top" regionWithinComponent left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="1.675mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="2.047mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="L1" edgeDistance="2.322mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CBULK" edgeDistance="3.46mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.36mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="COUT2" edgeDistance="4.409mm" directions="left,top" freeSpaceOnLeft="1.1mm" freeSpaceAbove=">5.0mm" left="-11.4mm" right="-8.6mm" bottom="-3.2mm" top="-1.8mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-4.7mm" right="-3.9mm" bottom="-8.5mm" top="-7.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CVINA" edgeDistance="0mm" overlapDepth="0.8mm" directions="right,bottom,top" freeSpaceOnRight=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="U3" edgeDistance="0.785mm" directions="left" freeSpaceOnLeft="1.4mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.9mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.05mm" directions="top" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="4.2mm" directions="bottom" freeSpaceOnLeft="1.5mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="CIN" edgeDistance="4.775mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="U2" edgeDistance="4.941mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-11.1mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" width="1.0mm" height="1.4mm">
+    <NearbyComponent name="CESP" edgeDistance="0mm" overlapDepth="1.025mm" directions="left,bottom,top" freeSpaceOnLeft=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+    <NearbyComponent name="CESPHF" edgeDistance="1.325mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="2.9mm" freeSpaceBelow=">5.0mm" left="-12.7mm" right="-10.3mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="U1" edgeDistance="2.675mm" directions="right" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-12.7mm" right="-11.9mm" bottom="10.0mm" top="11.0mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CESPHF" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="-12.7mm" right="-10.3mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="CESP" edgeDistance="1.325mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="2.7mm" freeSpaceAbove=">5.0mm" left="-12.9mm" right="-10.1mm" bottom="12.3mm" top="13.7mm" />
+    <NearbyComponent name="U1" edgeDistance="4.525mm" directions="right" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="10.4mm" right="11.2mm" bottom="12.5mm" top="13.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="CEN" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="REN" edgeDistance="1.55mm" directions="bottom" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="U1" edgeDistance="3.025mm" directions="left" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="RBOOT" edgeDistance="4.05mm" directions="bottom" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="2.3mm" right="3.1mm" bottom="-1.5mm" top="-0.5mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="CIMU" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="U2" edgeDistance="0.632mm" directions="left" freeSpaceOnLeft="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="0.95mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="1.25mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U1" edgeDistance="3.6mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CREG" edgeDistance="4.55mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" freeSpaceBelow=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.67mm" directions="left,bottom" freeSpaceOnLeft="3.8mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="3.9mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="CIMU" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="0.95mm" directions="bottom" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIO" edgeDistance="1.25mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="U2" edgeDistance="2.282mm" directions="left" freeSpaceOnLeft="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="U1" edgeDistance="3.6mm" directions="top" freeSpaceOnLeft="2.7mm" freeSpaceOnRight="1.4mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="RADCH" edgeDistance="4.05mm" directions="right" freeSpaceOnRight="3.6mm" freeSpaceAbove=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="RADCL" edgeDistance="4.184mm" directions="right,bottom" freeSpaceOnRight="3.6mm" freeSpaceBelow="4.0mm" left="8.8mm" right="11.2mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="3.9mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="CIMUB" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0.95mm" directions="top" freeSpaceOnLeft="0.6mm" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="U2" edgeDistance="2.282mm" directions="left" freeSpaceOnLeft="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIO" edgeDistance="3.15mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="RADCL" edgeDistance="4.05mm" directions="right" freeSpaceOnRight="3.6mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="8.8mm" right="11.2mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="RADCH" edgeDistance="4.16mm" directions="right,top" freeSpaceOnRight="3.6mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="10.4mm" right="11.2mm" bottom="10.0mm" top="11.0mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="REN" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+    <NearbyComponent name="CEN" edgeDistance="1.55mm" directions="top" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="RBOOT" edgeDistance="1.55mm" directions="bottom" freeSpaceOnLeft="1.4mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="7.5mm" top="8.5mm" />
+    <NearbyComponent name="U1" edgeDistance="3.025mm" directions="left" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.4mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="TP1" edgeDistance="4.882mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.1mm" left="14.8mm" right="16.2mm" bottom="5.3mm" top="6.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-4.7mm" right="-3.9mm" bottom="-3.5mm" top="-2.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="RCS" edgeDistance="0mm" overlapDepth="0.8mm" directions="right,bottom,top" freeSpaceOnRight="0.6mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="0.55mm" directions="top" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+    <NearbyComponent name="U2" edgeDistance="2.282mm" directions="right" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" freeSpaceBelow=">5.0mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="COUT2" edgeDistance="3.85mm" directions="left" freeSpaceOnLeft="1.1mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="3.6mm" left="-11.4mm" right="-8.6mm" bottom="-3.2mm" top="-1.8mm" />
+    <NearbyComponent name="U3" edgeDistance="3.964mm" directions="left,bottom" freeSpaceOnLeft="1.4mm" freeSpaceBelow="4.9mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="4.05mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="10.4mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RADCH" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="RADCL" edgeDistance="1.05mm" directions="bottom" freeSpaceOnLeft="4.0mm" freeSpaceOnRight="3.6mm" freeSpaceBelow="4.0mm" left="8.8mm" right="11.2mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="TP4" edgeDistance="3.575mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.1mm" freeSpaceBelow="1.1mm" left="14.8mm" right="16.2mm" bottom="-2.3mm" top="-0.9mm" />
+    <NearbyComponent name="TP3" edgeDistance="3.652mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.1mm" left="14.8mm" right="16.2mm" bottom="0.2mm" top="1.6mm" />
+    <NearbyComponent name="TP5" edgeDistance="4.089mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="14.8mm" right="16.2mm" bottom="-4.9mm" top="-3.5mm" />
+    <NearbyComponent name="U1" edgeDistance="4.702mm" directions="left,top" freeSpaceOnLeft="2.7mm" freeSpaceAbove=">5.0mm" left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="TP2" edgeDistance="4.855mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="14.8mm" right="16.2mm" bottom="2.8mm" top="4.2mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="8.8mm" right="9.6mm" bottom="-3.5mm" top="-2.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="RADCL" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="RADCH" edgeDistance="1.05mm" directions="top" freeSpaceOnLeft="4.0mm" freeSpaceOnRight="3.6mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="4.05mm" directions="left" freeSpaceOnLeft="0.6mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CADC" edgeDistance="4.05mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIMU" edgeDistance="4.184mm" directions="left,top" freeSpaceOnLeft="0.6mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="10.4mm" right="11.2mm" bottom="-3.5mm" top="-2.5mm" width="0.8mm" height="0.9mm">
+    <NearbyComponent name="RADCL" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="8.8mm" right="11.2mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="RADCH" edgeDistance="1.05mm" directions="top" freeSpaceOnLeft="4.0mm" freeSpaceOnRight="3.6mm" freeSpaceAbove=">5.0mm" left="8.8mm" right="11.2mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="TP5" edgeDistance="3.575mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.1mm" freeSpaceBelow=">5.0mm" left="14.8mm" right="16.2mm" bottom="-4.9mm" top="-3.5mm" />
+    <NearbyComponent name="TP4" edgeDistance="3.581mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.1mm" left="14.8mm" right="16.2mm" bottom="-2.3mm" top="-0.9mm" />
+    <NearbyComponent name="CADC" edgeDistance="4.05mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="TP6" edgeDistance="4.377mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="14.8mm" right="16.2mm" bottom="-7.4mm" top="-6.0mm" />
+    <NearbyComponent name="TP3" edgeDistance="4.507mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.1mm" left="14.8mm" right="16.2mm" bottom="0.2mm" top="1.6mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="17.9mm" right="18.7mm" bottom="18.0mm" top="19.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RPD1" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,bottom,top" freeSpaceOnLeft=">5.0mm" left="16.3mm" right="18.7mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="RG1" edgeDistance="1.05mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="Q1" edgeDistance="1.275mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="20.0mm" right="23.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="D1" edgeDistance="2.025mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceAbove=">5.0mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="19.8mm" right="20.6mm" bottom="25.0mm" top="26.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="CM1" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="19.8mm" right="22.2mm" bottom="25.0mm" top="26.0mm" />
+    <NearbyComponent name="D1" edgeDistance="2.025mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceBelow="1.7mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="17.9mm" right="18.7mm" bottom="-17.0mm" top="-16.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RG2" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,bottom,top" freeSpaceOnLeft=">5.0mm" left="16.3mm" right="18.7mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="RPD2" edgeDistance="1.05mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="Q2" edgeDistance="1.275mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="20.0mm" right="23.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="D2" edgeDistance="4.025mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceBelow=">5.0mm" left="17.8mm" right="24.2mm" bottom="-23.0mm" top="-21.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="17.9mm" right="18.7mm" bottom="-19.0mm" top="-18.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RPD2" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,bottom,top" freeSpaceOnLeft=">5.0mm" left="16.3mm" right="18.7mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="RG2" edgeDistance="1.05mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="Q2" edgeDistance="1.275mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="20.0mm" right="23.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="D2" edgeDistance="2.025mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceBelow=">5.0mm" left="17.8mm" right="24.2mm" bottom="-23.0mm" top="-21.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="19.8mm" right="20.6mm" bottom="-26.0mm" top="-25.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="CM2" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="19.8mm" right="22.2mm" bottom="-26.0mm" top="-25.0mm" />
+    <NearbyComponent name="D2" edgeDistance="2.025mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceAbove="1.7mm" left="17.8mm" right="24.2mm" bottom="-23.0mm" top="-21.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-23.0mm" right="-22.0mm" bottom="-18.3mm" top="-17.7mm" width="1.0mm" height="0.7mm">
+    <NearbyComponent name="Q3" edgeDistance="0mm" overlapDepth="0.65mm" directions="left,right,bottom,top" regionWithinComponent left="-23.0mm" right="-20.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="D3" edgeDistance="2.675mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="-23.0mm" top="-21.0mm" />
+    <NearbyComponent name="M3_POS" edgeDistance="2.955mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-27.0mm" right="-25.0mm" bottom="-22.5mm" top="-20.5mm" />
+    <NearbyComponent name="RPD3" edgeDistance="3.275mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="RG3" edgeDistance="3.349mm" directions="right,top" freeSpaceOnRight="1.8mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="M3_NEG" edgeDistance="4.998mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow=">5.0mm" left="-29.5mm" right="-27.5mm" bottom="-22.5mm" top="-20.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-18.7mm" right="-17.9mm" bottom="-19.0mm" top="-18.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RPD3" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="-18.7mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="RG3" edgeDistance="1.05mm" directions="top" freeSpaceOnLeft="1.3mm" freeSpaceOnRight="1.8mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="Q3" edgeDistance="1.275mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="-23.0mm" right="-20.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="D3" edgeDistance="2.025mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="-23.0mm" top="-21.0mm" />
+    <NearbyComponent name="BAT1" edgeDistance="3.465mm" directions="right,top" freeSpaceOnRight="2.0mm" freeSpaceAbove="4.3mm" left="-14.5mm" right="-11.5mm" bottom="-17.5mm" top="-14.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-17.1mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RPD3" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,bottom,top" freeSpaceOnLeft="1.3mm" left="-18.7mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="RG3" edgeDistance="1.05mm" directions="top" freeSpaceOnLeft="1.3mm" freeSpaceOnRight="1.8mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="BAT1" edgeDistance="1.851mm" directions="right,top" freeSpaceOnRight="2.0mm" freeSpaceAbove="4.3mm" left="-14.5mm" right="-11.5mm" bottom="-17.5mm" top="-14.5mm" />
+    <NearbyComponent name="D3" edgeDistance="2.151mm" directions="left,bottom" freeSpaceOnLeft="0.8mm" freeSpaceBelow=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="-23.0mm" top="-21.0mm" />
+    <NearbyComponent name="Q3" edgeDistance="2.925mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="-23.0mm" right="-20.0mm" bottom="-19.3mm" top="-16.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-23.0mm" right="-22.0mm" bottom="17.7mm" top="18.3mm" width="1.0mm" height="0.7mm">
+    <NearbyComponent name="Q4" edgeDistance="0mm" overlapDepth="0.65mm" directions="left,right,bottom,top" regionWithinComponent left="-23.0mm" right="-20.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="D4" edgeDistance="2.675mm" directions="top" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="21.0mm" top="23.0mm" />
+    <NearbyComponent name="M4_POS" edgeDistance="2.955mm" directions="left,top" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" left="-27.0mm" right="-25.0mm" bottom="20.5mm" top="22.5mm" />
+    <NearbyComponent name="RPD4" edgeDistance="3.275mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="RG4" edgeDistance="3.349mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="M4_NEG" edgeDistance="4.998mm" directions="left,top" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" left="-29.5mm" right="-27.5mm" bottom="20.5mm" top="22.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-18.7mm" right="-17.9mm" bottom="16.0mm" top="17.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RG4" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="-18.7mm" right="-16.3mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="RPD4" edgeDistance="1.05mm" directions="top" freeSpaceOnLeft="1.3mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="Q4" edgeDistance="1.275mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="-23.0mm" right="-20.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="D4" edgeDistance="4.025mm" directions="top" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-18.7mm" right="-17.9mm" bottom="18.0mm" top="19.0mm" width="0.8mm" height="1.0mm">
+    <NearbyComponent name="RPD4" edgeDistance="0mm" overlapDepth="0.8mm" directions="left,right,bottom,top" regionWithinComponent left="-18.7mm" right="-16.3mm" bottom="18.0mm" top="19.0mm" />
+    <NearbyComponent name="RG4" edgeDistance="1.05mm" directions="bottom" freeSpaceOnLeft="1.3mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="16.0mm" top="17.0mm" />
+    <NearbyComponent name="Q4" edgeDistance="1.275mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="1.7mm" freeSpaceBelow=">5.0mm" left="-23.0mm" right="-20.0mm" bottom="16.7mm" top="19.3mm" />
+    <NearbyComponent name="D4" edgeDistance="2.025mm" directions="top" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="-24.2mm" right="-17.8mm" bottom="21.0mm" top="23.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-3.1mm" right="-2.3mm" bottom="-7.5mm" top="-7.4mm" width="0.8mm" height="0.2mm">
+    <NearbyComponent name="CVINA" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="U3" edgeDistance="2.435mm" directions="left" freeSpaceOnLeft="1.4mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.9mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.885mm" directions="top" freeSpaceOnLeft="3.8mm" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="U2" edgeDistance="4.264mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove="2.9mm" left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="19.8mm" right="20.0mm" bottom="-19.3mm" top="-18.6mm" width="0.2mm" height="0.7mm">
+    <NearbyComponent name="Q2" edgeDistance="0mm" directions="right" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="20.0mm" right="23.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="RPD2" edgeDistance="1.075mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow=">5.0mm" left="16.3mm" right="18.7mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="D2" edgeDistance="1.725mm" directions="bottom" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="0.8mm" freeSpaceBelow=">5.0mm" left="17.8mm" right="24.2mm" bottom="-23.0mm" top="-21.0mm" />
+    <NearbyComponent name="RG2" edgeDistance="1.969mm" directions="left,top" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="-17.0mm" top="-16.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-6.4mm" right="-5.5mm" bottom="-9.4mm" top="-9.1mm" width="0.9mm" height="0.2mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.22mm" directions="left,bottom,top" freeSpaceOnLeft="1.4mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="1.029mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="2.914mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="CBULK" edgeDistance="3.35mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="L1" edgeDistance="3.522mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-6.4mm" right="-5.5mm" bottom="-8.9mm" top="-8.6mm" width="0.9mm" height="0.2mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.22mm" directions="left,bottom,top" freeSpaceOnLeft="1.4mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CVINA" edgeDistance="0.802mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.269mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="L1" edgeDistance="3.522mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CBULK" edgeDistance="3.846mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-7.8mm" right="-7.0mm" bottom="-7.5mm" top="-7.4mm" width="0.8mm" height="0.1mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.14mm" directions="left,right,bottom" freeSpaceBelow="4.9mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="L1" edgeDistance="2.097mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CVINA" edgeDistance="2.275mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="4.2mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CIN" edgeDistance="3.873mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="COUT2" edgeDistance="4.227mm" directions="left,top" freeSpaceOnLeft="1.1mm" freeSpaceAbove=">5.0mm" left="-11.4mm" right="-8.6mm" bottom="-3.2mm" top="-1.8mm" />
+    <NearbyComponent name="RCS" edgeDistance="4.502mm" directions="right,top" freeSpaceOnRight="0.6mm" freeSpaceAbove=">5.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="17.8mm" right="18.0mm" bottom="-22.0mm" top="-21.0mm" width="0.2mm" height="1.0mm">
+    <NearbyComponent name="D2" edgeDistance="0mm" overlapDepth="0.2mm" directions="left,right,bottom" freeSpaceBelow=">5.0mm" left="17.8mm" right="24.2mm" bottom="-23.0mm" top="-21.0mm" />
+    <NearbyComponent name="RPD2" edgeDistance="2.025mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="Q2" edgeDistance="2.641mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove=">5.0mm" left="20.0mm" right="23.0mm" bottom="-19.3mm" top="-16.7mm" />
+    <NearbyComponent name="CM2" edgeDistance="3.507mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="19.8mm" right="22.2mm" bottom="-26.0mm" top="-25.0mm" />
+    <NearbyComponent name="RG2" edgeDistance="4.025mm" directions="top" freeSpaceOnLeft=">5.0mm" freeSpaceOnRight="1.3mm" freeSpaceAbove=">5.0mm" left="16.3mm" right="18.7mm" bottom="-17.0mm" top="-16.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-7.8mm" right="-7.0mm" bottom="-9.6mm" top="-9.5mm" width="0.8mm" height="0.1mm">
+    <NearbyComponent name="U3" edgeDistance="0mm" overlapDepth="0.14mm" directions="left,right,top" freeSpaceAbove=">5.0mm" left="-8.5mm" right="-5.5mm" bottom="-9.6mm" top="-7.4mm" />
+    <NearbyComponent name="CIN" edgeDistance="1.822mm" directions="left,bottom" freeSpaceOnLeft=">5.0mm" freeSpaceBelow="1.8mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+    <NearbyComponent name="L1" edgeDistance="2.097mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove="3.6mm" freeSpaceBelow="1.1mm" left="-14.1mm" right="-9.9mm" bottom="-10.2mm" top="-6.8mm" />
+    <NearbyComponent name="CVINA" edgeDistance="2.495mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-8.5mm" top="-7.5mm" />
+    <NearbyComponent name="CBULK" edgeDistance="3.621mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="-5.0mm" right="-1.0mm" bottom="-15.3mm" top="-12.7mm" />
+    <NearbyComponent name="BAT2" edgeDistance="4.86mm" directions="bottom" freeSpaceOnLeft="2.0mm" freeSpaceOnRight="1.5mm" freeSpaceBelow=">5.0mm" left="-9.5mm" right="-6.5mm" bottom="-17.5mm" top="-14.5mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="1.0mm" right="1.6mm" bottom="-2.5mm" top="-2.1mm" width="0.6mm" height="0.4mm">
+    <NearbyComponent name="U2" edgeDistance="0mm" overlapDepth="0.403mm" directions="left,right,bottom,top" regionWithinComponent left="-1.6mm" right="1.6mm" bottom="-3.1mm" top="0.1mm" />
+    <NearbyComponent name="CIMUB" edgeDistance="0.632mm" directions="right" freeSpaceOnRight="4.0mm" freeSpaceAbove="0.9mm" freeSpaceBelow=">5.0mm" left="2.3mm" right="4.7mm" bottom="-3.4mm" top="-2.4mm" />
+    <NearbyComponent name="CIMU" edgeDistance="0.918mm" directions="right,top" freeSpaceOnRight="4.0mm" freeSpaceAbove="1.2mm" left="2.3mm" right="4.7mm" bottom="-1.5mm" top="-0.5mm" />
+    <NearbyComponent name="CIO" edgeDistance="2.934mm" directions="right,top" freeSpaceOnRight=">5.0mm" freeSpaceAbove="1.4mm" left="2.3mm" right="4.7mm" bottom="0.7mm" top="1.7mm" />
+    <NearbyComponent name="RCS" edgeDistance="3.318mm" directions="left" freeSpaceOnLeft="3.8mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="4.0mm" left="-4.7mm" right="-2.3mm" bottom="-3.5mm" top="-2.5mm" />
+    <NearbyComponent name="CREG" edgeDistance="3.322mm" directions="left,top" freeSpaceOnLeft="3.8mm" freeSpaceAbove="4.1mm" left="-4.7mm" right="-2.3mm" bottom="-2.0mm" top="-1.0mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="-12.0mm" right="-11.5mm" bottom="-18.0mm" top="-17.5mm" width="0.5mm" height="0.5mm">
+    <NearbyComponent name="BAT1" edgeDistance="0mm" directions="top" freeSpaceOnLeft="1.8mm" freeSpaceOnRight="2.0mm" freeSpaceAbove="4.3mm" left="-14.5mm" right="-11.5mm" bottom="-17.5mm" top="-14.5mm" />
+    <NearbyComponent name="BAT2" edgeDistance="2mm" directions="right,top" freeSpaceOnRight="1.5mm" freeSpaceAbove="1.8mm" left="-9.5mm" right="-6.5mm" bottom="-17.5mm" top="-14.5mm" />
+    <NearbyComponent name="RPD3" edgeDistance="4.275mm" directions="left,bottom" freeSpaceOnLeft="1.3mm" freeSpaceBelow=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-19.0mm" top="-18.0mm" />
+    <NearbyComponent name="RG3" edgeDistance="4.307mm" directions="left,top" freeSpaceOnLeft="1.3mm" freeSpaceAbove=">5.0mm" left="-18.7mm" right="-16.3mm" bottom="-17.0mm" top="-16.0mm" />
+    <NearbyComponent name="CIN" edgeDistance="4.801mm" directions="right,top" freeSpaceOnRight="3.5mm" freeSpaceAbove="1.1mm" left="-11.4mm" right="-8.6mm" bottom="-12.7mm" top="-11.3mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="25.0mm" right="25.4mm" bottom="22.5mm" top="23.0mm" width="0.4mm" height="0.5mm">
+    <NearbyComponent name="M1_POS" edgeDistance="0mm" directions="bottom" freeSpaceOnLeft="0.8mm" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="25.0mm" right="27.0mm" bottom="20.5mm" top="22.5mm" />
+    <NearbyComponent name="D1" edgeDistance="0.8mm" directions="left" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" freeSpaceBelow="1.7mm" left="17.8mm" right="24.2mm" bottom="21.0mm" top="23.0mm" />
+    <NearbyComponent name="M1_NEG" edgeDistance="2.078mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="27.5mm" right="29.5mm" bottom="20.5mm" top="22.5mm" />
+    <NearbyComponent name="CM1" edgeDistance="3.435mm" directions="left,top" freeSpaceOnLeft=">5.0mm" freeSpaceAbove=">5.0mm" left="19.8mm" right="22.2mm" bottom="25.0mm" top="26.0mm" />
+    <NearbyComponent name="Q1" edgeDistance="3.795mm" directions="left,bottom" freeSpaceOnLeft="1.3mm" freeSpaceBelow=">5.0mm" left="20.0mm" right="23.0mm" bottom="16.7mm" top="19.3mm" />
+</CongestedRegion>
+
+<CongestedRegion probabilityOfFailure="0.1%" left="6.6mm" right="7.4mm" bottom="13.5mm" top="13.7mm" width="0.8mm" height="0.2mm">
+    <NearbyComponent name="U1" edgeDistance="0mm" overlapDepth="0.225mm" directions="left,right,bottom,top" regionWithinComponent left="-7.4mm" right="7.4mm" bottom="3.1mm" top="17.9mm" />
+    <NearbyComponent name="CEN" edgeDistance="1.4mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow="1.5mm" left="8.8mm" right="11.2mm" bottom="12.5mm" top="13.5mm" />
+    <NearbyComponent name="REN" edgeDistance="2.865mm" directions="right,bottom" freeSpaceOnRight=">5.0mm" freeSpaceBelow=">5.0mm" left="8.8mm" right="11.2mm" bottom="10.0mm" top="11.0mm" />
+</CongestedRegion>

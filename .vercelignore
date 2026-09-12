@@ -1,0 +1,7 @@
+/pcb/
+.impeccable/
+cad/node_modules/
+cad/test-results/
+cad/tests/
+cad/.env*
+cad/.vercel/

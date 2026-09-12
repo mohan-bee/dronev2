@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vercel/
+.env*
+.DS_Store
+*.log
+pcb/.claude/
+pcb/.agents/
+
+.impeccable/review/
+cad/test-results/
+cad/playwright-report/

@@ -1,0 +1,57 @@
+{
+  "colors": {
+    "canvas": "#ecede7",
+    "paper": "#f8f9f5",
+    "ink": "#242923",
+    "secondary": "#60665c",
+    "rule": "#d6d9cf",
+    "active": "#455a37",
+    "highlight": "#c66935",
+    "selectedSurface": "#e0e7d7",
+    "selectedInk": "#304424",
+    "exportHover": "#34462a"
+  },
+  "typography": {
+    "family": "Inter Variable",
+    "body": 13,
+    "sceneHeading": 28,
+    "headerTitle": 15,
+    "brand": 23,
+    "controls": 11,
+    "metadata": "9\u201310px",
+    "mobileSceneHeading": 24
+  },
+  "spacing": {
+    "commonPanelPadding": 22,
+    "compactPanelPadding": 17,
+    "note": "Contextual spacing; no strict four-pixel grid."
+  },
+  "radii": {
+    "row": 3,
+    "control": 4,
+    "toolbar": 5
+  },
+  "breakpoints": {
+    "wideMin": 1600,
+    "compactMax": 1100,
+    "mobileMax": 820
+  },
+  "responsive": {
+    "desktopColumns": "238px minmax(300px, 1fr) 276px",
+    "mobile": "Canvas first, two-column inspector below; 260px assembly-list overlay."
+  },
+  "shadows": {
+    "toolbar": "0 3px 8px #24292308",
+    "mobileParts": "8px 10px 30px #24292325"
+  },
+  "focus": {
+    "color": "#455a37",
+    "width": 2,
+    "offset": 4
+  },
+  "motion": {
+    "orbit": "damping",
+    "explosion": "direct slider response",
+    "propellers": "opt-in; disabled for reduced motion at load"
+  }
+}

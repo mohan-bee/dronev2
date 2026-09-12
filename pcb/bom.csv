@@ -1,0 +1,17 @@
+References,Qty,JLCPCB,Manufacturer part,Type,Status
+U1,1,C2913206,ESP32-S3-MINI-1-N8,simple_chip,Candidate; verify inventory and ratings
+U2,1,C97633,ICM-20602,simple_chip,Candidate; verify inventory and ratings
+U3,1,C15516,TPS63031DSKR,simple_chip,Candidate; verify inventory and ratings
+L1,1,C2041714,SRN3015-1R5Y,simple_inductor,Candidate; verify inventory and ratings
+CIN COUT1 COUT2,3,C15850,CL21A106KAYNNNE,simple_capacitor,Candidate; verify inventory and ratings
+CVINA CESPHF CIMU CREG CADC CM1 CM2 CM3 CM4,9,C14663,CC0603KRX7R9BB104,simple_capacitor,Candidate; verify inventory and ratings
+CBULK,1,C5440143,CS3225X7R476K160NRL,simple_capacitor,Candidate; verify inventory and ratings
+CESP,1,C45783,CL21A226MAQNNNE,simple_capacitor,Candidate; verify inventory and ratings
+CEN,1,C15849,CL10A105KB8NNNC,simple_capacitor,Candidate; verify inventory and ratings
+CIMUB,1,C23630,CL10A225KO8NNNC,simple_capacitor,Candidate; verify inventory and ratings
+CIO,1,C57112,0603B103K500NT,simple_capacitor,Candidate; verify inventory and ratings
+REN RBOOT RCS,3,C25804,,simple_resistor,Candidate; verify inventory and ratings
+RADCH RADCL RPD1 RPD2 RPD3 RPD4,6,C25803,,simple_resistor,Candidate; verify inventory and ratings
+Q1 Q2 Q3 Q4,4,C20917,AO3400A,simple_chip,Candidate; verify inventory and ratings
+D1 D2 D3 D4,4,C8678,SS34,simple_diode,Candidate; verify inventory and ratings
+RG1 RG2 RG3 RG4,4,C22775,,simple_resistor,Candidate; verify inventory and ratings
