@@ -2,6 +2,8 @@
 
 Placement prototype only. Routing is intentionally deferred; do not order these outputs.
 
+- **Resolved deployment asset blocker:** the first production smoke test found `/pcb/circuit.json` and `/pcb/provenance.json` returned 404. The root `.vercelignore` pattern `pcb/` also excluded the viewer's `cad/public/pcb/` assets. The exclusion is now anchored to `/pcb/`. Redeployment restored the assets; both desktop and mobile browser tests pass against the public production URL.
+
 - **Confirmed tscircuit blocker — keepouts:** `tsci check netlist` fails with `Unsupported component type "pcbkeepout"` in the installed core despite the element being documented. Keepout requirements are recorded in `pcb/keepouts.json` and displayed in CAD; they must be implemented as actual copper exclusions before routing. Placement builds omit the unsupported JSX rather than pretending the exclusions are enforced.
 - **Imported AO3400A schematic symbol:** schematic placement reports colliding top/bottom inner labels on the imported 0.68 × 0.4-unit symbol. Resolved with an explicit readable pin-box symbol while preserving the JLCPCB footprint, model and verified G/S/D mapping.
 

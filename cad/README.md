@@ -27,3 +27,9 @@ The page labels these limits. Export preserves visible parts and explosion state
 ## Deploy
 
 Vercel project: `dronev2-cad`, GitHub root directory `cad`. Production is deployed from the repository root using its linked project, or through the Vercel GitHub integration after merge. No runtime environment variables are required. `.vercel/` and `.env*` are ignored.
+
+## Verified result
+
+Production smoke tests passed on the live URL: desktop model loading, component inspection, views, exploded state, selection/visibility consistency, GLB download, mobile layout and parts drawer. The rendered PCB provenance hash matches the compiled source.
+
+![Assembly studio](preview.png)
