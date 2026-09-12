@@ -11,6 +11,15 @@ test("desktop assembly, inspection, views, visibility and export", async ({
   await expect(page.locator("#loading")).toBeHidden({ timeout: 45000 });
   await expect(page.locator("#part-count")).toContainText("parts");
   await page.screenshot({ path: path.join(shots, "desktop.png") });
+  await expect(page.locator('[data-part="SAD"]')).toHaveCount(0);
+  await page.locator('[data-part="TIE"]').click();
+  await expect(page.locator("#selection")).toContainText("1.8 × 3.2 mm");
+  await page.locator('[data-view="bottom"]').click();
+  await page.screenshot({path: path.join(shots, "battery-bottom.png")});
+  await page.locator('[data-view="side"]').click();
+  await page.screenshot({path: path.join(shots, "battery-side.png")});
+  await page.locator('[data-part="PAD"]').click();
+  await expect(page.locator("#selection")).toContainText("Insulating foam pad");
   await page.locator('[data-part="U1"]').click();
   await expect(page.locator("#selection h3")).toContainText("ESP32");
   await page.locator('[data-view="top"]').click();

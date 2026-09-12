@@ -28,7 +28,7 @@ const icons: Record<string, string> = {
 const icon = (name: string) =>
   `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name]}</svg>`;
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-<header><a class="brand" href="/" aria-label="Drone V2 home">${icon("cube")}<strong>drone<span>v2</span></strong></a><span class="header-divider"></span><h1>Assembly studio</h1><span class="revision">Placement revision A</span><a class="source-link" href="https://github.com/mohan-bee/dronev2" target="_blank" rel="noreferrer">Source ${icon("arrow")}</a></header>
+<header><a class="brand" href="/" aria-label="Drone V2 home">${icon("cube")}<strong>drone<span>v2</span></strong></a><span class="header-divider"></span><h1>Assembly studio</h1><span class="revision">Placement revision B</span><a class="source-link" href="https://github.com/mohan-bee/dronev2" target="_blank" rel="noreferrer">Source ${icon("arrow")}</a></header>
 <div class="workspace">
 <aside class="sidebar" id="sidebar"><div class="panel-title"><h2>Assembly</h2><span id="part-count">—</span></div><p class="side-description">One PCB. Four motors.<br>A tiny flying machine.</p><label class="search"><span>Find a component</span><input id="search" type="search" placeholder="Search parts or reference…"/></label><div class="tree" id="tree" aria-label="Assembly parts"></div><div class="sidebar-bottom"><span class="status-dot"></span> Placement only · unrouted<a href="https://github.com/mohan-bee/dronev2/blob/pcb/compact-placement/ISSUES.md" target="_blank" rel="noreferrer">Open design issues ${icon("arrow")}</a></div></aside>
 <main id="stage"><div class="canvas-heading"><div><h2>Quad-X / 80</h2><p>1S microdrone · two-layer PCB frame</p></div><button class="mobile-toggle" id="parts-toggle">${icon("layers")} Parts</button></div><div id="viewport" tabindex="0" role="img" aria-label="Interactive 3D drone assembly. Drag to orbit, scroll to zoom. Use view buttons for keyboard access."></div><div class="view-toolbar" role="group" aria-label="Camera views"><button data-view="iso" class="active">Perspective</button><button data-view="top">Top</button><button data-view="side">Side</button><button data-view="bottom">Bottom</button><button id="reset" aria-label="Reset view">${icon("reset")}</button></div><div class="loading" id="loading" role="status">Building the assembly…</div><div id="view-status" class="view-status" aria-live="polite"></div><div class="canvas-footer"><span>Drag to orbit <i>·</i> Scroll to zoom <i>·</i> Click to inspect</span><span class="scale">10 mm grid</span></div></main>
@@ -399,7 +399,15 @@ async function start() {
   shape.closePath();
   for (const h of data.filter((d) => d.type === "pcb_hole")) {
     const path = new T.Path();
-    path.absarc(h.x, h.y, h.hole_diameter / 2, 0, Math.PI * 2, true);
+    if (h.hole_shape === "pill") {
+      const r = h.hole_width / 2;
+      const dy = (h.hole_height - h.hole_width) / 2;
+      path.absarc(h.x, h.y + dy, r, 0, Math.PI, false);
+      path.absarc(h.x, h.y - dy, r, Math.PI, Math.PI * 2, false);
+      path.closePath();
+    } else {
+      path.absarc(h.x, h.y, h.hole_diameter / 2, 0, Math.PI * 2, true);
+    }
     shape.holes.push(path);
   }
   mesh(
@@ -601,13 +609,14 @@ async function start() {
     rotor.rotation.z = m.x * m.y > 0 ? 0.6 : -0.6;
     const collar = addPart(
       `COL${m.name.slice(1)}`,
-      "Motor collar",
-      "Slip-in collar concept: 7.1 mm bore, 7.5 mm stem, 10 mm retaining flange. Fit-test before printing a full set.",
+      "Motor mount placeholder",
+      "Supplier not selected. A rubber mount must match the 7 mm motor, PCB opening and 1 mm panel groove, and resist tilt and pullout. Shown collar dimensions are provisional.",
       "Printed parts",
       0,
       7,
       [
-        ["Bore", "7.1 mm"],
+        ["Placeholder bore", "7.1 mm"],
+        ["Supplier fit", "Unverified"],
         ["Board opening", "7.6 mm"],
         ["Flange", "10 mm"],
       ],
@@ -667,7 +676,7 @@ async function start() {
     "1S 400 mAh LiPo",
     "YY702030 battery envelope below the board. Connector identity, polarity and actual pouch dimensions require verification.",
     "Battery",
-    -7,
+    -1.5,
     -24,
     [
       ["Envelope", "20 × 30 × 7 mm"],
@@ -676,9 +685,9 @@ async function start() {
       ["Connector", "M.X2.0 — unresolved"],
     ],
   );
-  box(bat.object, 20, 30, 7, 0, -1, -3.5, materials.battery);
-  box(bat.object, 18, 26, 0.1, 0, -1, 0.06, materials.black);
-  textLabel(bat.object, "1S · 400 mAh", 0, -1, 0.13, 17);
+  box(bat.object, 20, 30, 7, 0, geometry.batteryCenter[1], -3.5, materials.battery);
+  box(bat.object, 18, 26, 0.1, 0, geometry.batteryCenter[1], 0.06, materials.black);
+  textLabel(bat.object, "1S · 400 mAh", 0, geometry.batteryCenter[1], 0.13, 17);
   const wireMat = new T.MeshStandardMaterial({
     color: 0xa83c2e,
     roughness: 0.6,
@@ -688,30 +697,47 @@ async function start() {
     [1, materials.black],
   ] as const) {
     const path = new T.CatmullRomCurve3([
-      new T.Vector3(-8 + offset, -15, -3),
+      new T.Vector3(-8 + offset, -19, -3),
       new T.Vector3(-15 + offset, -18, -1),
-      new T.Vector3(-13 + offset, -16, 6),
+      new T.Vector3(offset < 0 ? -13 : -8, -16, 2),
     ]);
     mesh(new T.TubeGeometry(path, 24, 0.45, 8, false), mat, bat.object);
   }
-  const saddle = addPart(
-    "SAD",
-    "Insulated battery saddle",
-    "Perimeter rails leave an open window beneath the IMU. Rounded rail and strap concept; mounting fasteners are not finalized.",
-    "Printed parts",
-    -4,
-    -14,
-    [
-      ["Battery clearance", "21 × 31 mm"],
-      ["Under-IMU contact", "Open window"],
-      ["Retention", "Strap concept"],
-    ],
+  const pad = addPart(
+    "PAD", "Insulating foam pad",
+    "Thin nonconductive pad between PCB and battery. The relief window avoids pressure directly beneath the IMU. Verify insulation and grip with the actual pack.",
+    "Battery", -1.5, -12,
+    [["Thickness", "1 mm"], ["Envelope", "20 × 30 mm"], ["IMU relief", "4 × 4 mm"]],
   );
-  for (const x of [-11, 11])
-    box(saddle.object, 1.5, 32, 9, x, -1, -5, materials.plastic);
-  for (const y of [-17, 15])
-    box(saddle.object, 23, 1.5, 2, 0, y, -9, materials.plastic);
-  box(saddle.object, 24, 5, 1, 0, -11, -10, materials.black);
+  const padShape = new T.Shape();
+  padShape.moveTo(-10, -20); padShape.lineTo(10, -20);
+  padShape.lineTo(10, 10); padShape.lineTo(-10, 10); padShape.closePath();
+  const relief = new T.Path();
+  relief.moveTo(-2, -3.5); relief.lineTo(-2, 0.5);
+  relief.lineTo(2, 0.5); relief.lineTo(2, -3.5); relief.closePath();
+  padShape.holes.push(relief);
+  mesh(new T.ExtrudeGeometry(padShape, {depth: 1, bevelEnabled: false}),
+    new T.MeshStandardMaterial({color: 0x696b62, roughness: 1}), pad.object);
+  const retention = geometry.batteryRetention;
+  const tie = addPart(
+    "TIE", "Battery zip tie",
+    "One 2.5 mm nylon zip tie through the rounded PCB slots. The upper run crosses a clear component-free lane. Smooth slot edges, snug gently, and check battery slip without squeezing the pouch.",
+    "Battery", 0, -34,
+    [["Tie width", "2.5 mm"], ["Slots", "1.8 × 3.2 mm"],
+     ["Slot centers", "±13.5, -5 mm"], ["Fit", "Prototype verification required"]],
+  );
+  const nylon = new T.MeshStandardMaterial({color: 0xb9bbaa, roughness: 0.85});
+  // A rectangular strip follows the board slots and wraps beneath the padded pack.
+  const route = [[-13.5, 0.9], [13.5, 0.9], [13.5, -1.2],
+    [10.5, -2], [10.5, -8.9], [-10.5, -8.9], [-10.5, -2],
+    [-13.5, -1.2], [-13.5, 0.9]];
+  for (let i = 1; i < route.length; i++) {
+    const [ax, az] = route[i - 1], [bx, bz] = route[i];
+    const strip = box(tie.object, Math.hypot(bx - ax, bz - az),
+      retention.tieWidth, 0.7, (ax + bx) / 2, retention.y, (az + bz) / 2, nylon);
+    strip.rotation.y = -Math.atan2(bz - az, bx - ax);
+  }
+  box(tie.object, 3, 3.8, 2.4, -15.1, retention.y, 1.7, nylon);
   const canopy = addPart(
     "CAP",
     "Protective canopy",
