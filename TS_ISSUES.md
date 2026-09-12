@@ -4,10 +4,10 @@ Routing work in progress on `pcb/routing`. Toolchain: tscircuit 0.0.2527 / CLI 0
 
 ## Result of the first routing session
 
-- 131 trace paths, 73 vias, one bottom GND pour, and three copper keepouts.
+- 131 trace paths, 78 vias, one bottom GND pour, and three copper keepouts.
 - Netlist, schematic placement and PCB placement pass. The TypeScript check passes.
 - The pill-hole patch test, electrical net assertions and zip-tie clearance test pass. The no-error-records test intentionally fails.
-- **99 trace-to-board-edge errors remain.** Both pipeline 9 and pipeline 7 reproduce the wider-power routing failure. Neither output is suitable for fabrication. The draft preserves the errors rather than suppressing checks.
+- **96 trace-to-board-edge errors remain after the DNP header revision.** Both pipeline 9 and pipeline 7 previously reproduced the wider-power routing failure. Neither output is suitable for fabrication. The draft preserves the errors rather than suppressing checks.
 - Power distribution needs constrained/manual routing or a router fix that respects the actual X outline during power expansion. Motor current, trace necks, via current and ground-return topology still require hardware review.
 
 The existing CAD deployment and published placement package remain unchanged by this routing draft.
@@ -86,3 +86,7 @@ Explicit trace thicknesses do reach the router (0.8 mm VBAT and motor switched n
 ## TS-006 — copper pour margin differs from final DRC by rounding
 
 A bottom GND pour requested with `boardEdgeMargin={0.3}` is reported at 0.299 mm by the copper-to-edge checker against the 0.300 mm rule. Resolved with a 0.4 mm pour margin while preserving the board's 0.3 mm rule.
+
+## DNP header revision
+
+All 16 testpoint pads are replaced with six 2.54 mm DNP pin headers: JPROG (6 pins), JBAT and JM1–JM4 (2 pins each). DNP flags, all 16 plated holes, and pin-to-net assignments pass regression checks. Netlist, schematic placement, PCB placement and TypeScript checks pass. Six tests pass; the no-error-records test remains failing on 96 board-edge routing violations. Historical cropped snapshots above show the original reproductions; the latest circuit is pcb/issues/current-routing.json.
