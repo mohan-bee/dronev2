@@ -2,3 +2,6 @@
 *.step -diff -text
 pcb/imports/** linguist-generated=true
 cad/public/pcb/** linguist-generated=true
+
+pcb/issues/*.json linguist-generated=true
+pcb/reports/routing-*.txt linguist-generated=true

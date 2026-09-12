@@ -1,0 +1,116 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `board`. It was passed a child from Drone. See https://react.dev/link/warning-keys for more information.
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Wrote debug artifact: dist/autorouter-debug/placement-unrouted.png
+Autorouting <board#676 /> phase 1/1 start: connections=28, obstacles=206, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, cache=miss, cache_id=12cad7cd/f71d3822
+  connections: net.GND, net.VBAT, net.V3V3, net.EN, net.REGOUT, net.VBAT_ADC, net.BOOT, net.IMU_CS, net.IMU_MOSI, net.IMU_SCK, net.IMU_MISO, net.IMU_INT, net.M1_PWM, net.M2_PWM, net.M3_PWM, net.M4_PWM, net.UART_TX, net.UART_RX, net.L2, net.L1, net.M1_GATE, net.M1_NEG, net.M2_GATE, net.M2_NEG, net.M3_GATE, net.M3_NEG, net.M4_GATE, net.M4_NEG
+Wrote debug artifact: dist/autorouter-debug/phase-0.input.simple-route.json
+  phase 1/1 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=topologyPlanningSolver steps=1 progress=17% iterations_per_second=10008 elapsed=1.3s
+  phase 1/1 done: routed_traces=131, jumpers=0, errors=0, elapsed=10.2s
+Wrote debug artifact: dist/autorouter-debug/phase-0.output.traces.json
+Wrote debug artifact: dist/autorouter-debug/phase-0-routed.png
+Async effect error in PcbDesignRuleChecks "board:drc-checks":
+Error: Could not determine radius of element: {"type":"pcb_hole","pcb_hole_id":"pcb_hole_4","pcb_component_id":null,"hole_shape":"pill","hole_width":1.8,"hole_height":3.2,"x":-13.5,"y":-5,"is_covered_with_solder_mask":false,"subcircuit_id":"subcircuit_source_group_0","spatialIndexId":"1046"}
+    at getRadiusOfCircuitJsonElement (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/checks/dist/index.js:1329:13)
+    at checkEachPcbTraceNonOverlapping (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/checks/dist/index.js:1506:24)
+    at runAllRoutingChecks (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/checks/dist/index.js:5043:8)
+    at <anonymous> (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:68161:11)
+    at <anonymous> (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:68220:15)
+    at _queueAsyncEffect (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:628:16)
+    at updatePcbDesignRuleChecks (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:68218:10)
+    at doInitialPcbDesignRuleChecks (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:68122:10)
+    at runRenderPhase (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:790:24)
+    at runRenderCycle (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:741:12)
+    at render (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/core/dist/index.js:66433:16)
+    at generateCircuitJson (/Users/mohan/Documents/Codex/2026-09-12/hey-i-want-to-make-a/work/dronev2/pcb/node_modules/@tscircuit/cli/dist/cli/main.js:166074:12)
+    at unknown
+    at unknown
+    at unknown
+    at processTicksAndRejections (native:7:39)
+Wrote debug artifact: dist/autorouter-debug/board.meta.json
+Circuit JSON written to dist/index/circuit.json
+Component CIN has ftype="simple_capacitor" but reference designator should start with C
+Component COUT1 has ftype="simple_capacitor" but reference designator should start with C
+Component COUT2 has ftype="simple_capacitor" but reference designator should start with C
+Component CVINA has ftype="simple_capacitor" but reference designator should start with C
+Component CBULK has ftype="simple_capacitor" but reference designator should start with C
+Component CESP has ftype="simple_capacitor" but reference designator should start with C
+Component CESPHF has ftype="simple_capacitor" but reference designator should start with C
+Component CEN has ftype="simple_capacitor" but reference designator should start with C
+Component CIMU has ftype="simple_capacitor" but reference designator should start with C
+Component CIMUB has ftype="simple_capacitor" but reference designator should start with C
+Component CIO has ftype="simple_capacitor" but reference designator should start with C
+Component CREG has ftype="simple_capacitor" but reference designator should start with C
+Component CADC has ftype="simple_capacitor" but reference designator should start with C
+Component REN has ftype="simple_resistor" but reference designator should start with R
+Component RBOOT has ftype="simple_resistor" but reference designator should start with R
+Component RCS has ftype="simple_resistor" but reference designator should start with R
+Component RADCH has ftype="simple_resistor" but reference designator should start with R
+Component RADCL has ftype="simple_resistor" but reference designator should start with R
+Component BAT1 has ftype="simple_test_point" but reference designator should start with TP
+Component BAT2 has ftype="simple_test_point" but reference designator should start with TP
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Component RG1 has ftype="simple_resistor" but reference designator should start with R
+Component RPD1 has ftype="simple_resistor" but reference designator should start with R
+Component CM1 has ftype="simple_capacitor" but reference designator should start with C
+Component M1_POS has ftype="simple_test_point" but reference designator should start with TP
+Component M1_NEG has ftype="simple_test_point" but reference designator should start with TP
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Component RG2 has ftype="simple_resistor" but reference designator should start with R
+Component RPD2 has ftype="simple_resistor" but reference designator should start with R
+Component CM2 has ftype="simple_capacitor" but reference designator should start with C
+Component M2_POS has ftype="simple_test_point" but reference designator should start with TP
+Component M2_NEG has ftype="simple_test_point" but reference designator should start with TP
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Component RG3 has ftype="simple_resistor" but reference designator should start with R
+Component RPD3 has ftype="simple_resistor" but reference designator should start with R
+Component CM3 has ftype="simple_capacitor" but reference designator should start with C
+Component M3_POS has ftype="simple_test_point" but reference designator should start with TP
+Component M3_NEG has ftype="simple_test_point" but reference designator should start with TP
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Component RG4 has ftype="simple_resistor" but reference designator should start with R
+Component RPD4 has ftype="simple_resistor" but reference designator should start with R
+Component CM4 has ftype="simple_capacitor" but reference designator should start with C
+Component M4_POS has ftype="simple_test_point" but reference designator should start with TP
+Component M4_NEG has ftype="simple_test_point" but reference designator should start with TP
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+TP1 has no courtyard
+TP2 has no courtyard
+TP3 has no courtyard
+TP4 has no courtyard
+TP5 has no courtyard
+TP6 has no courtyard
+BAT1 has no courtyard
+BAT2 has no courtyard
+M1_POS has no courtyard
+M1_NEG has no courtyard
+M2_POS has no courtyard
+M2_NEG has no courtyard
+M3_POS has no courtyard
+M3_NEG has no courtyard
+M4_POS has no courtyard
+M4_NEG has no courtyard
+Multiple immediate children found with name "L1" in subcircuit "unnamed_board1". Names must be unique.
+Multiple immediate children found with name "M1_NEG" in subcircuit "unnamed_board1". Names must be unique.
+Multiple immediate children found with name "M2_NEG" in subcircuit "unnamed_board1". Names must be unique.
+Multiple immediate children found with name "M3_NEG" in subcircuit "unnamed_board1". Names must be unique.
+Multiple immediate children found with name "M4_NEG" in subcircuit "unnamed_board1". Names must be unique.
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, svgs, autorouter-debug, autorouter-timeout, autorouter-dump-srj
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

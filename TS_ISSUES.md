@@ -53,7 +53,7 @@ Could not determine radius of element: {"type":"pcb_hole", ...,
 ```
 `checkEachPcbTraceNonOverlapping` classifies every `pcb_hole` as circular; its radius helper supports only circular holes. Proposed workaround: only enter the circle branch for circle holes. Pill holes then use the existing bounding-box clearance calculation, conservatively blocking the rounded corners too. This preserves slot geometry and does not disable DRC.
 
-Evidence: [first build log](pcb/issues/first-routing-build.log), [router input](pcb/issues/first-route-input.json), [raw route paths](pcb/issues/first-route-traces.json).
+Evidence: [first build log](pcb/issues/first-routing-build.txt), [router input](pcb/issues/first-route-input.json), [raw route paths](pcb/issues/first-route-traces.json).
 
 ## TS-003 — net/component name collisions only surface during routing
 
