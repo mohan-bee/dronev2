@@ -609,3 +609,4 @@ M4_POS
 
 M4_NEG
 - pin1: NETS(M4_NEG)
+

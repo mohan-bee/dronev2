@@ -20,7 +20,7 @@ const capParts: Record<string, [string, string]> = {
 };
 const caps = [
   ["CIN", "10uF", "0805", -10, -12, "VBAT", "GND", "Power"],
-  ["COUT1", "10uF", "0805", -11, -4.5, "V3V3", "GND", "Power"],
+  ["COUT1", "10uF", "0805", -14, -2, "V3V3", "GND", "Power"],
   ["COUT2", "10uF", "0805", -10, -2.5, "V3V3", "GND", "Power"],
   ["CVINA", "100nF", "0603", -3.5, -8, "VBAT", "GND", "Power"],
   ["CBULK", "47uF", "1210", -3, -14, "VBAT", "GND", "Power"],
@@ -28,7 +28,7 @@ const caps = [
   ["CESPHF", "100nF", "0603", -11.5, 10.5, "V3V3", "GND", "Controller"],
   ["CEN", "1uF", "0603", 10, 13, "EN", "GND", "Controller"],
   ["CIMU", "100nF", "0603", 3.5, -1, "V3V3", "GND", "Sensor"],
-  ["CIMUB", "2.2uF", "0603", 3.5, -3.5, "V3V3", "GND", "Sensor"],
+  ["CIMUB", "2.2uF", "0603", 3.5, -2.9, "V3V3", "GND", "Sensor"],
   ["CIO", "10nF", "0603", 3.5, 1.2, "V3V3", "GND", "Sensor"],
   ["CREG", "100nF", "0603", -3.5, -1.5, "REGOUT", "GND", "Sensor"],
   ["CADC", "100nF", "0603", 10, -8, "VBAT_ADC", "GND", "Battery_sense"],
@@ -36,9 +36,9 @@ const caps = [
 const resistors = [
   ["REN", "10k", 10, 10.5, "V3V3", "EN", "Controller"],
   ["RBOOT", "10k", 10, 8, "V3V3", "BOOT", "Controller"],
-  ["RCS", "10k", -3.5, -4, "V3V3", "IMU_CS", "Sensor"],
-  ["RADCH", "100k", 10, -3, "VBAT", "VBAT_ADC", "Battery_sense"],
-  ["RADCL", "100k", 10, -5.5, "VBAT_ADC", "GND", "Battery_sense"],
+  ["RCS", "10k", -3.5, -3, "V3V3", "IMU_CS", "Sensor"],
+  ["RADCH", "100k", 10, -1, "VBAT", "VBAT_ADC", "Battery_sense"],
+  ["RADCL", "100k", 10, -3, "VBAT_ADC", "GND", "Battery_sense"],
 ] as const;
 const origins: Record<string, [number, number]> = {
   Power: [32, 8],
@@ -99,7 +99,7 @@ export default function Drone() {
         schHeight={1.2}
         name="U3"
         pcbX={-7}
-        pcbY={-8}
+        pcbY={-8.5}
         schX={32}
         schY={15}
         schSectionName="Power"
@@ -107,7 +107,7 @@ export default function Drone() {
       <SRN3015_1R5Y
         name="L1"
         pcbX={-12}
-        pcbY={-8}
+        pcbY={-8.5}
         schX={38}
         schY={15}
         schSectionName="Power"
@@ -324,8 +324,12 @@ export default function Drone() {
           </Fragment>
         );
       })}
-      <hole name="H5" diameter={2.2} pcbX={-15.5} pcbY={-2} />
-      <hole name="H6" diameter={2.2} pcbX={15.5} pcbY={-13} />
+      {geometry.batteryRetention.slotX.map((x, i) => (
+        <hole name={`H${i + 5}`} shape="pill"
+          width={geometry.batteryRetention.slotWidth}
+          height={geometry.batteryRetention.slotHeight}
+          pcbX={x} pcbY={geometry.batteryRetention.y} />
+      ))}
       <silkscreentext text="DRONE V2" pcbX={5} pcbY={-14} fontSize={1.4} />
       <silkscreentext text="1S +   -" pcbX={-10.5} pcbY={-18} fontSize={0.8} />
     </board>

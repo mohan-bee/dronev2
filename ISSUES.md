@@ -12,3 +12,6 @@ Placement prototype only. Routing is intentionally deferred; do not order these 
 - **Power qualification:** TPS63031 low-battery radio load, motor startup current, inductor saturation and capacitor DC-bias derating require verification before manufacture.
 - **Manufacturing release:** pin mapping review, routed DRC, copper keepouts and actual JLCPCB stock/assembly quotation remain required.
 - **Resolved tooling reference gap:** linked CLI/element files in the original local skill were absent. The CLI bootstrap installed working project-local references; installed help/types and manufacturer documents were also used.
+
+- **Motor mount procurement:** a dimensioned rubber mount for the 7 mm motor and 1 mm PCB has not been selected. The 7.6 mm PCB apertures and collar geometry remain placeholders. Confirm bore, panel groove, flange retention and resistance to motor tilt before changing holes or buying mounts.
+- **Zip-tie battery retention:** two 1.8 × 3.2 mm rounded slots accept the proposed 2.5 mm tie. Use a thin insulating pad and smooth slot edges; verify actual tie thickness/head and pack dimensions, longitudinal slip, and avoid compressing the pouch or bending the PCB. The 20 × 30 mm pack is centered at (0, -5), overhanging the rear center edge by 2 mm. Prototype fit remains required.

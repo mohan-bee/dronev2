@@ -11,15 +11,15 @@ board top-layer utilization:
   - 15.361% (710.281mm^2); bounds=(minX=11.48mm, maxX=34mm, minY=-15.77mm, maxY=15.77mm)
   - 14.044% (649.373mm^2); bounds=(minX=-34mm, maxX=-24.45mm, minY=-34mm, maxY=34mm)
   - 8.655% (400.215mm^2); bounds=(minX=-19.52mm, maxX=19.52mm, minY=23.749mm, maxY=34mm)
-  - 5.949% (275.075mm^2); bounds=(minX=-0.72mm, maxX=8.52mm, minY=-34mm, maxY=-4.23mm)
+  - 6.069% (280.619mm^2); bounds=(minX=-0.72mm, maxX=8.52mm, minY=-34mm, maxY=-3.63mm)
 
 board-edge status:
 - U1: 16.075mm inside bottom edge
 - U2: 30.857mm inside top edge
-- U3: 24.86mm inside top edge
+- U3: 24.36mm inside top edge
 - L1: 19.922mm inside left edge
 - CIN: 21.3mm inside top edge
-- COUT1: 21.575mm inside left edge
+- COUT1: 18.575mm inside left edge
 - COUT2: 22.575mm inside left edge
 - CVINA: 25.525mm inside top edge
 - CBULK: 18.675mm inside top edge
