@@ -74,3 +74,22 @@ test("placement output has no error records, no routing and correct mechanics", 
   ).toBeCloseTo(80, 4);
   expect(80 / Math.sqrt(2) - geometry.propDiameter).toBeGreaterThan(10);
 });
+test("zip-tie slots and top strap lane stay clear of electronics", () => {
+  const r = geometry.batteryRetention;
+  const slots = data.filter((x: any) => x.type === "pcb_hole" && x.hole_shape === "pill");
+  expect(slots).toHaveLength(2);
+  expect(slots.map((x: any) => x.x)).toEqual(r.slotX);
+  for (const slot of slots) {
+    expect(slot.y).toBe(r.y);
+    expect(slot.hole_width).toBe(r.slotWidth);
+    expect(slot.hole_height).toBe(r.slotHeight);
+    expect(slot.hole_height).toBeGreaterThan(r.tieWidth);
+  }
+  for (const c of data.filter((x: any) => x.type === "pcb_component")) {
+    const overlaps = c.center.x + c.width / 2 > -14.4 &&
+      c.center.x - c.width / 2 < 14.4 &&
+      c.center.y + c.height / 2 > r.y - r.tieWidth / 2 - 0.1 &&
+      c.center.y - c.height / 2 < r.y + r.tieWidth / 2 + 0.1;
+    expect(overlaps).toBe(false);
+  }
+});

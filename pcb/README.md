@@ -73,3 +73,5 @@ See [reports/validation.md](reports/validation.md). Checks cover connectivity an
 - [ESP-FC firmware](https://github.com/rtlopez/esp-fc)
 
 The user's two supplied specifications are preserved under `docs/`.
+
+Battery retention uses one 2.5 mm zip tie through H5/H6 (1.8 × 3.2 mm rounded slots) at x=±13.5, y=-5 mm, with a thin insulating pad. The top strap lane is kept clear of components. No printed battery saddle is required. Fit and slip testing remain necessary.

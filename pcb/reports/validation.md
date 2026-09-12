@@ -11,3 +11,5 @@ Commands run with tscircuit 0.0.2527 and CLI 0.1.2063.
 - IMU SCK straight-line connection: 7.40 mm.
 
 The full build retains warnings for descriptive reference names, generic pin specifications, pad-only components without courtyards, supplier footprint differences, and schematic reference-label styling. These are not placement errors and are not silenced. Review them before fabrication. Keepout support is a confirmed tooling blocker recorded in ISSUES.md.
+
+Battery retention revision: both placement checks pass; five tests / 146 assertions pass, including the rounded slot dimensions and component clearance across the top tie lane. Motor apertures remain provisional pending mount selection.
